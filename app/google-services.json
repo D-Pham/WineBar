@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "790278507813",
+    "firebase_url": "https://winebar-fdd1b.firebaseio.com",
+    "project_id": "winebar-fdd1b",
+    "storage_bucket": "winebar-fdd1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790278507813:android:262c9fad1771096c",
+        "android_client_info": {
+          "package_name": "com.example.potato.winebar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790278507813-48vv2rsb0atsiohh2l23n98cucojd8l1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8Ubh3uc8W7zbxcIzJS5fDudoAPyuF7fM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

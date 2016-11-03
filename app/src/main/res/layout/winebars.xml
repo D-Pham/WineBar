@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="Wine Bars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:paddingBottom="20dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textSize="24sp"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:color/background_dark">
+    </View>
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:textSize="24sp"
+        android:paddingTop="5dp"/>
+    <View android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:color/background_dark">
+    </View>
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:textSize="24sp"
+        android:paddingTop="5dp"/>
+    <View android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:color/background_dark">
+    </View>
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:textSize="24sp"
+        android:paddingTop="5dp"/>
+    <View android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:color/background_dark">
+    </View>
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:textSize="24sp"
+        android:paddingTop="5dp"/>
+    <View android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@android:color/background_dark">
+    </View>
+</LinearLayout>
