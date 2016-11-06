@@ -22,6 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".barlist" />
+        <activity android:name=".barselect" />
+        <activity android:name=".barreview"></activity>
     </application>
 
 </manifest>

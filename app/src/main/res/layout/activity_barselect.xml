@@ -52,20 +52,22 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="45dp" />
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="45dp"><CheckBox
-    android:text="Orangina"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/checkBox2" />
-<Button
-    android:layout_marginLeft="200dp"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="REVIEW"
-    android:textAlignment="center" />
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"><CheckBox
+        android:text="Orangina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2" />
+        <Button
+            android:layout_marginLeft="170dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REVIEW"
+            android:textAlignment="center"
+            android:onClick="review"
+            android:id="@+id/review1" />
+    </LinearLayout>
 
 
     <CheckBox

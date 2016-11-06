@@ -14,11 +14,12 @@
         android:paddingBottom="20dp" />
 
     <TextView
-        android:text="TextView"
+        android:text="ShitBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView13"
+        android:id="@+id/shitbar"
         android:textSize="24sp"
+        android:onClick="barchoose"
         />
     <View
         android:layout_width="fill_parent"
