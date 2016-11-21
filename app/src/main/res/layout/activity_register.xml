@@ -2,13 +2,11 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".LoginActivity"
+    tools:context=".AuthNewAccountActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:windowSoftInputMode="adjustResize"
     android:orientation="vertical"
     android:background="#FFFFFF">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,19 +22,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Wine Bar"
+            android:text="Sign Up"
             android:textSize="40dp"
             android:textColor="#323232"/>
         <EditText
-            android:id="@+id/loginEmail"
+            android:id="@+id/signUpFullName"
             android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:gravity="center"
             android:layout_marginTop="10dp"
+            android:hint="Full Name (e.g. Brad Allen)"/>
+        <EditText
+            android:id="@+id/signUpEmail"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
             android:hint="Email"/>
         <EditText
-            android:id="@+id/loginPassword"
+            android:id="@+id/signUpPassword"
             android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -44,27 +49,15 @@
             android:hint="Password"
             android:inputType="textPassword"/>
         <Button
-            android:id="@+id/loginButton"
+            android:id="@+id/createAccountButton"
             android:layout_width="260dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:text="Login"
+            android:text="Done"
             android:textSize="16dp"
             android:textColor="#FFFFFF"
             android:background="#800000"
-            android:stateListAnimator="@null"/>
-        <Button
-            android:id="@+id/newAccountButton"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="No account yet? Create one"
-            android:textSize="16dp"
-            android:textColor="#262626"
-            android:textAllCaps="false"
-            android:background="@android:color/transparent"
             android:stateListAnimator="@null"/>
     </LinearLayout>
 </LinearLayout>
