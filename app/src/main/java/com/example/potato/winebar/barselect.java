@@ -17,7 +17,7 @@ public class barselect extends Activity {
         review.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent rev = new Intent(barselect.this,barreview.class);
+                Intent rev = new Intent(barselect.this,reviewitem.class);
                 startActivity(rev);
             }
         });

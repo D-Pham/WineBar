@@ -40,7 +40,7 @@
     </View>
 
     <TextView
-        android:text="Nigga Grub"
+        android:text="Grub"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:id="@+id/textView4"
@@ -52,6 +52,7 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="45dp" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="45dp"><CheckBox

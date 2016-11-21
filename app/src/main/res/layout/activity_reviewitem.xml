@@ -9,7 +9,7 @@
         android:text="Sweetness"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView10"
+        android:id="@+id/cattitle"
         android:textAlignment="center"
         android:layout_marginTop="40dp"
         android:textSize="30sp"
@@ -42,9 +42,10 @@
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
-            android:id="@+id/editText"
+            android:id="@+id/ratinged"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="?android:attr/colorControlNormal" />
+            android:textColor="?android:attr/colorControlNormal"
+            android:hint="10.0" />
     </LinearLayout>
 
     <LinearLayout
@@ -63,14 +64,16 @@
             android:textColor="@color/common_google_signin_btn_text_dark_focused" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:gravity="top"
             android:inputType="textMultiLine"
             android:ems="10"
-            android:id="@+id/editText2"
-            android:layout_weight="1.30"
+            android:id="@+id/notesed"
+            android:layout_weight="8.15"
             android:layout_height="85dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="?android:attr/colorControlNormal" />
+            android:textColor="?android:attr/colorControlNormal"
+            android:hint="This wine is absolutely extravagant. The sweetness serenades my tastebuds in a festival of umami."
+            android:layout_width="250dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -82,7 +85,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:onClick="next"/>
     </LinearLayout>
 
 

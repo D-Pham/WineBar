@@ -1,5 +1,6 @@
 package com.example.potato.winebar;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,8 @@ public class Welcome extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Go to edit
+                Intent temp = new Intent(Welcome.this, barselect.class);
+                startActivity(temp);
             }
         });
         notes.setOnClickListener(new View.OnClickListener(){

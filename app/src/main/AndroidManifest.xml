@@ -24,8 +24,9 @@
         </activity>
         <activity android:name=".barlist" />
         <activity android:name=".barselect" />
-        <activity android:name=".barreview" />
-        <activity android:name=".Register"></activity>
+        <activity android:name=".Register" />
+        <activity android:name=".reviewitem"/>
+        <activity android:name=".Welcome"></activity>
     </application>
 
 </manifest>
