@@ -24,7 +24,8 @@
         </activity>
         <activity android:name=".barlist" />
         <activity android:name=".barselect" />
-        <activity android:name=".barreview"></activity>
+        <activity android:name=".barreview" />
+        <activity android:name=".Register"></activity>
     </application>
 
 </manifest>
