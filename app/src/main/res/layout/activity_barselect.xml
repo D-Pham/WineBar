@@ -3,89 +3,9 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:text="ShitBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:paddingBottom="20dp" />
-
-    <TextView
-        android:text="6969 Somewhere St"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:textAlignment="center" />
-
-    <TextView
-        android:text="College Park, MD 20740"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView3"
-        android:textAlignment="center" />
-
-    <RatingBar
-        android:id="@+id/rating"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:numStars="5"
-        android:stepSize="0.1"
-        android:rating="4.5" />
-    <View android:layout_width="fill_parent"
-        android:layout_height="1px"
-        android:background="@android:color/background_dark">
-    </View>
-
-    <TextView
-        android:text="Grub"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:id="@+id/textView4"
-        android:textSize="18sp"
-        android:layout_marginTop="10dp" />
-
-    <CheckBox
-        android:text="kfc"
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"><CheckBox
-        android:text="Orangina"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/checkBox2" />
-        <Button
-            android:layout_marginLeft="170dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="REVIEW"
-            android:textAlignment="center"
-            android:onClick="review"
-            android:id="@+id/review1" />
-    </LinearLayout>
-
-
-    <CheckBox
-        android:text="watermelon"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:id="@+id/checkBox3" />
-
-    <CheckBox
-        android:text="pen"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:id="@+id/checkBox4" />
-
-    <CheckBox
-        android:text="pineapple"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:id="@+id/checkBox5" />
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </ListView>
 </LinearLayout>

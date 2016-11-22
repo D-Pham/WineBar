@@ -102,7 +102,7 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-        final Intent welc = new Intent(this, Welcome.class);
+        final Intent welcome = new Intent(this, Welcome.class);
         mAuth.signInWithEmailAndPassword(loginEmail, loginPassword)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -118,8 +118,8 @@ public class LoginActivity extends AppCompatActivity {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
                                 String key = dataSnapshot.getValue(String.class);
-                                welc.putExtra("userkey", key);
-                                startActivity(welc);
+                                welcome.putExtra("userkey", key);
+                                startActivity(welcome);
                             }
 
                             @Override

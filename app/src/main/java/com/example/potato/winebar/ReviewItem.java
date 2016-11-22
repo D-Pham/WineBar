@@ -13,7 +13,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class reviewitem extends AppCompatActivity {
+public class ReviewItem extends AppCompatActivity {
     String[][] reviews = new String[5][2];
     JSONObject ret1 = new JSONObject();
     int state = 0;

@@ -52,7 +52,7 @@ public class Register extends AppCompatActivity {
         final String signUpFullName = signUpFullNameEditText.getText().toString();
         final String signUpEmail = signUpEmailEditText.getText().toString();
         final String signUpPassword = signUpPasswordEditText.getText().toString();
-        final Intent barlist = new Intent(this, barlist.class);
+        final Intent welcome = new Intent(this, Welcome.class);
 
         if (signUpFullName.matches("")) {
             Toast.makeText(this, "You did not enter a full name", Toast.LENGTH_SHORT).show();
@@ -80,8 +80,8 @@ public class Register extends AppCompatActivity {
                         mDatabase.child("users").child(key).setValue(authUserAccount);
                         mDatabase.child("user_keys").child(signUpEmail.replace(".", "&")).setValue(key);
                         System.out.println("Worked");
-                        barlist.putExtra("userkey", key);
-                        startActivity(barlist);
+                        welcome.putExtra("userkey", key);
+                        startActivity(welcome);
                     }
                 });
     }
