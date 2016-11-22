@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -30,5 +31,15 @@ public class barselect extends Activity {
 
         adapterWines adp = new adapterWines(this, items);
         list.setAdapter(adp);
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+                                    long arg3) {
+                wines selection = (wines) arg0.getItemAtPosition(arg2);
+                Intent intent = new Intent(getApplicationContext(), ReviewItem.class);
+                startActivity(intent);
+            }
+        });
     }
 }
