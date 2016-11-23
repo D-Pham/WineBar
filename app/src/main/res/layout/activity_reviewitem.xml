@@ -44,14 +44,13 @@
             android:ems="10"
             android:id="@+id/ratinged"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="?android:attr/colorControlNormal"
-            android:hint="10.0" />
+            android:textColor="?android:attr/colorControlNormal" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:layout_height="70dp">
         <TextView
             android:layout_gravity="top"
             android:text="Notes:"
@@ -67,27 +66,38 @@
             android:gravity="top"
             android:inputType="textMultiLine"
             android:ems="10"
+            android:maxLines="3"
+            android:scrollbars="vertical"
             android:id="@+id/notesed"
-            android:layout_weight="8.15"
-            android:layout_height="85dp"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="?android:attr/colorControlNormal"
-            android:hint="This wine is absolutely extravagant. The sweetness serenades my tastebuds in a festival of umami."
             android:layout_width="250dp" />
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="right">
+        android:layout_height="wrap_content">
         <Button
-            android:text="=>"
+            android:layout_alignParentLeft="true"
+            android:text="&lt;="
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bak"
+            android:textSize="24sp"
+            android:onClick="back"
+            android:layout_marginTop="8dp" />
+        <Button
+            android:layout_alignParentRight="true"
+            android:text="=&gt;"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button"
             android:textSize="24sp"
-            android:onClick="next"/>
-    </LinearLayout>
+            android:onClick="next"
+            android:layout_marginTop="8dp" />
+    </RelativeLayout>
 
 
     <ImageView
@@ -96,7 +106,7 @@
         android:layout_height="180dp"
         app:srcCompat="@mipmap/ic_launcher"
         android:id="@+id/imageView"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="25dp" />
 
 
 </LinearLayout>

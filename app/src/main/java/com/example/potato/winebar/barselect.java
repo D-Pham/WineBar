@@ -2,12 +2,14 @@ package com.example.potato.winebar;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,6 +40,8 @@ public class barselect extends Activity {
                                     long arg3) {
                 wines selection = (wines) arg0.getItemAtPosition(arg2);
                 Intent intent = new Intent(getApplicationContext(), ReviewItem.class);
+                intent.putExtra("name",selection.getName().toString());
+                intent.putExtra("pic",selection.getPic().toString());
                 startActivity(intent);
             }
         });
