@@ -1,6 +1,7 @@
 package com.example.potato.winebar;
 
 import android.content.Intent;
+import android.icu.util.Calendar;
 import android.support.test.espresso.core.deps.guava.reflect.TypeToken;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ import com.google.gson.Gson;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,9 +36,14 @@ public class ReviewItem extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reviewitem);
+
+        // Hide back button when on first review page
         findViewById(R.id.bak).setVisibility(View.GONE);
+
         prev = this.getIntent();
         data = prev.getExtras();
+
+        // Find ID of imageview and assign the wine image retrieved from extras to it
         ImageView temp = (ImageView) findViewById(R.id.imageView);
         int imgID = this.getResources().getIdentifier((String)data.get("pic"),"drawable",this.getPackageName());
 
@@ -46,6 +53,14 @@ public class ReviewItem extends AppCompatActivity {
     public void next(View v) throws JSONException {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         findViewById(R.id.bak).setVisibility(View.VISIBLE);
+
+        /*
+        *  Determines if current review page has been visited or not, if yes, repopulate
+        *  the text fields with the previously stored information. Does not work if going back
+        *  when on the final review page because it does not get submitted/stored. Otherwise
+        *  store the data into a String[][] array. First [] refers to review page # and second []
+        *  consists of two elements, [0] is the numerical rating and [1] is any notes.
+        */
 
         if (state < 5 && (reviews[state][0] == null)) {
             reviews[state][0] = ((TextView)findViewById(R.id.ratinged)).getText().toString();
@@ -58,6 +73,8 @@ public class ReviewItem extends AppCompatActivity {
         }
 
         state++;
+
+        // Switch statement determining what review page you are on.
         switch (state) {
             case 1:
                 ((TextView)findViewById(R.id.cattitle)).setText("Acidity");
@@ -72,8 +89,11 @@ public class ReviewItem extends AppCompatActivity {
                 ((TextView)findViewById(R.id.cattitle)).setText("Body");
                 break;
             default:
+
+                // Default means end of review reached and commits saved data to a JSON object
                 JSONObject ret2 = new JSONObject();
-                for(int i = 0; i < 5; i++){
+
+                for(int i = 0; i < 5; i++){ // Iterate through saved array
                     JSONObject temp = new JSONObject();
                     switch (i){
                         case 0:
@@ -103,27 +123,39 @@ public class ReviewItem extends AppCompatActivity {
                             break;
                     }
                 }
+
                 final DatabaseReference root = FirebaseDatabase.getInstance().getReference();
                 final String email = user.getEmail().replace(".","&");
                 ret1.put(prev.getStringExtra("name"),ret2);
 
+                // Adds timestamp to the object
+                ret1.put("Date",(new Date().toString()));
+
                 root.child("user_keys").addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot snapshot) {
+
+                        // Retrieves FireBase data to get the unique key of the current user.
                         uKey = ((HashMap<String,String>)snapshot.getValue()).get(email).toString();
+
+                        // Converts JSON to Gson to map out data to be committed to FireBase
                         Map<String, Object> poot = new Gson().fromJson(ret1.toString(), new TypeToken<HashMap<String, Object>>(){}.getType());
 
+                        // Updates the user child with new reviews
                         root.child("users/"+uKey+"/reviews/").updateChildren(poot);
                     }
                     @Override public void onCancelled(DatabaseError error) {}
                 });
-                Intent done = new Intent(this,Welcome.class);
 
+                // Review intent finished. Return to welcome page.
+                Intent done = new Intent(this,Welcome.class);
                 startActivity(done);
                 break;
         }
     }
 
+    // Handles repopulation of previously entered fields when navigating
+    // to a previous review screen
     public void back(View v){
         state--;
         if (state == 0)
