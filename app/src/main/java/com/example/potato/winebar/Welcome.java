@@ -31,6 +31,8 @@ public class Welcome extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Go to notes
+                Intent temp = new Intent(Welcome.this, SeeReviews.class);
+                startActivity(temp);
             }
         });
 

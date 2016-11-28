@@ -26,7 +26,9 @@
         <activity android:name=".barselect" />
         <activity android:name=".Register" />
         <activity android:name=".ReviewItem"/>
-        <activity android:name=".Welcome"></activity>
+        <activity android:name=".Welcome"/>
+        <activity android:name=".SeeReviews"/>
+        <activity android:name=".ReviewDetailActivity"></activity>
     </application>
 
 </manifest>
