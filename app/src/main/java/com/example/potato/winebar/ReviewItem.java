@@ -54,13 +54,13 @@ public class ReviewItem extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         findViewById(R.id.bak).setVisibility(View.VISIBLE);
 
-        /*
+        /**
         *  Determines if current review page has been visited or not, if yes, repopulate
         *  the text fields with the previously stored information. Does not work if going back
         *  when on the final review page because it does not get submitted/stored. Otherwise
         *  store the data into a String[][] array. First [] refers to review page # and second []
         *  consists of two elements, [0] is the numerical rating and [1] is any notes.
-        */
+        **/
 
         if (state < 5 && (reviews[state][0] == null)) {
             reviews[state][0] = ((TextView)findViewById(R.id.ratinged)).getText().toString();
@@ -126,11 +126,11 @@ public class ReviewItem extends AppCompatActivity {
 
                 final DatabaseReference root = FirebaseDatabase.getInstance().getReference();
                 final String email = user.getEmail().replace(".","&");
-                ret1.put(prev.getStringExtra("name"),ret2);
 
                 // Adds timestamp to the object
-                ret1.put("Date",(new Date().toString()));
-
+                ret2.put("Date",(new Date().toString()));
+                ret1.put(prev.getStringExtra("name"),ret2);
+                
                 root.child("user_keys").addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot snapshot) {
