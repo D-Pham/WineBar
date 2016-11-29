@@ -130,11 +130,10 @@ public class ReviewItem extends AppCompatActivity {
                 // Adds timestamp to the object
                 ret2.put("Date",(new Date().toString()));
                 ret1.put(prev.getStringExtra("name"),ret2);
-                
+
                 root.child("user_keys").addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot snapshot) {
-
                         // Retrieves FireBase data to get the unique key of the current user.
                         uKey = ((HashMap<String,String>)snapshot.getValue()).get(email).toString();
 
@@ -142,7 +141,7 @@ public class ReviewItem extends AppCompatActivity {
                         Map<String, Object> poot = new Gson().fromJson(ret1.toString(), new TypeToken<HashMap<String, Object>>(){}.getType());
 
                         // Updates the user child with new reviews
-                        root.child("users/"+uKey+"/reviews/").updateChildren(poot);
+                        root.child("users/"+uKey+"/reviews/").push().setValue(poot);
                     }
                     @Override public void onCancelled(DatabaseError error) {}
                 });
