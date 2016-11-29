@@ -91,7 +91,7 @@ public class ReviewItem extends AppCompatActivity {
             default:
 
                 // Default means end of review reached and commits saved data to a JSON object
-                JSONObject ret2 = new JSONObject();
+                final JSONObject ret2 = new JSONObject();
 
                 for(int i = 0; i < 5; i++){ // Iterate through saved array
                     JSONObject temp = new JSONObject();
@@ -129,7 +129,6 @@ public class ReviewItem extends AppCompatActivity {
 
                 // Adds timestamp to the object
                 ret2.put("Date",(new Date().toString()));
-                ret1.put(prev.getStringExtra("name"),ret2);
 
                 root.child("user_keys").addValueEventListener(new ValueEventListener() {
                     @Override
@@ -138,10 +137,10 @@ public class ReviewItem extends AppCompatActivity {
                         uKey = ((HashMap<String,String>)snapshot.getValue()).get(email).toString();
 
                         // Converts JSON to Gson to map out data to be committed to FireBase
-                        Map<String, Object> poot = new Gson().fromJson(ret1.toString(), new TypeToken<HashMap<String, Object>>(){}.getType());
+                        Map<String, Object> poot = new Gson().fromJson(ret2.toString(), new TypeToken<HashMap<String, Object>>(){}.getType());
 
                         // Updates the user child with new reviews
-                        root.child("users/"+uKey+"/reviews/").push().setValue(poot);
+                        root.child("users/"+uKey).push().child(prev.getStringExtra("name")).setValue(poot);
                     }
                     @Override public void onCancelled(DatabaseError error) {}
                 });
