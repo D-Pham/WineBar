@@ -7,7 +7,7 @@ package com.example.potato.winebar;
 public class review {
 
     String pic;
-    String name; // name of wine
+    String wine; // name of wine
     String description;
     String sweetnessRating;
     String bodyRating;
@@ -17,6 +17,7 @@ public class review {
     String bodyNotes;
     String acidityNotes;
     String tanninNotes;
+    String date;
 
 
     public String getPic() {
@@ -28,11 +29,11 @@ public class review {
     }
 
     public String getName() {
-        return name;
+        return wine;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.wine = name;
     }
 
     public String getDescription() {
@@ -71,15 +72,18 @@ public class review {
 
 
 
-    public review(String pic, String name, String description, String sweetnessRating, String bodyRating, String acidityRating, String tanninRating){
+    public review(String pic, String wine, String date, String sweetnessNotes, String bodyNotes, String acidityNotes, String tanninNotes, String sweetnessRating, String bodyRating, String acidityRating, String tanninRating){
         this.pic = pic;
-        this.name = name;
-
+        this.wine = wine;
+        this.date = date;
+        this.sweetnessNotes = sweetnessNotes;
+        this.bodyNotes = bodyNotes;
+        this.acidityNotes = acidityNotes;
+        this.tanninNotes = tanninNotes;
         this.sweetnessRating = sweetnessRating;
         this.bodyRating = bodyRating;
         this.acidityRating = acidityRating;
         this.tanninRating = tanninRating;
-        this.description = description;
 
     }
 

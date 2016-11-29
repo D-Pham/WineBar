@@ -141,7 +141,7 @@ public class ReviewItem extends AppCompatActivity {
                         Map<String, Object> poot = new Gson().fromJson(ret2.toString(), new TypeToken<HashMap<String, Object>>(){}.getType());
 
                         // Updates the user child with new reviews
-                        root.child("users/"+uKey).push().setValue(poot);
+                        root.child("users/").child(uKey).child("reviews").push().setValue(poot);
                     }
                     @Override public void onCancelled(DatabaseError error) {}
                 });
