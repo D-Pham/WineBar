@@ -92,6 +92,7 @@ public class ReviewItem extends AppCompatActivity {
 
                 // Default means end of review reached and commits saved data to a JSON object
                 final JSONObject ret2 = new JSONObject();
+                ret2.put("wine",prev.getStringExtra("name"));
 
                 for(int i = 0; i < 5; i++){ // Iterate through saved array
                     JSONObject temp = new JSONObject();
@@ -140,7 +141,7 @@ public class ReviewItem extends AppCompatActivity {
                         Map<String, Object> poot = new Gson().fromJson(ret2.toString(), new TypeToken<HashMap<String, Object>>(){}.getType());
 
                         // Updates the user child with new reviews
-                        root.child("users/"+uKey).push().child(prev.getStringExtra("name")).setValue(poot);
+                        root.child("users/"+uKey).push().setValue(poot);
                     }
                     @Override public void onCancelled(DatabaseError error) {}
                 });
