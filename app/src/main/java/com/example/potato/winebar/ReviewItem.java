@@ -1,5 +1,6 @@
 package com.example.potato.winebar;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.icu.util.Calendar;
 import android.support.test.espresso.core.deps.guava.reflect.TypeToken;
@@ -25,7 +26,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ReviewItem extends AppCompatActivity {
+public class ReviewItem extends Activity {
     String uKey;
     Intent prev;
     Bundle data;
