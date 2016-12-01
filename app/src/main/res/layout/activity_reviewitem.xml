@@ -88,13 +88,13 @@
         <Button
             android:layout_alignParentLeft="true"
             android:id="@+id/bak"
-            android:textSize="24sp"
             android:onClick="back"
             android:layout_marginTop="8dp"
             android:background="@drawable/l"
             android:layout_height="50dp"
             android:layout_width="50dp"
-            android:layout_marginLeft="10dp" />
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp" />
         <Button
             android:layout_alignParentRight="true"
             android:layout_width="50dp"

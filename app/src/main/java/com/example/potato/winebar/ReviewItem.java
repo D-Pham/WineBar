@@ -68,14 +68,14 @@ public class ReviewItem extends Activity {
         *  consists of two elements, [0] is the numerical rating and [1] is any notes.
         **/
 
-        if (state < 7 && (reviews[state][0] == null)) {
+        if (state < 7 && (reviews[state][1] == null)) {
             reviews[state][0] = ((TextView)findViewById(R.id.ratinged)).getText().toString();
             reviews[state][1] = ((TextView)findViewById(R.id.notesed)).getText().toString();
             ((TextView) findViewById(R.id.notesed)).setText("");
             ((TextView) findViewById(R.id.ratinged)).setText("");
         } else if (state < 7) {
-            ((TextView)findViewById(R.id.ratinged)).setText(reviews[state][0]);
-            ((TextView)findViewById(R.id.notesed)).setText(reviews[state][1]);
+            ((TextView)findViewById(R.id.ratinged)).setText(reviews[state+1][0]);
+            ((TextView)findViewById(R.id.notesed)).setText(reviews[state+1][1]);
         }
 
         state++;
