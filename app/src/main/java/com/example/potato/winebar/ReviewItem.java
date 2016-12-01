@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -30,8 +31,7 @@ public class ReviewItem extends Activity {
     String uKey;
     Intent prev;
     Bundle data;
-    String[][] reviews = new String[5][2];
-    JSONObject ret1 = new JSONObject();
+    String[][] reviews = new String[7][2];
     int state = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,10 @@ public class ReviewItem extends Activity {
 
         // Hide back button when on first review page
         findViewById(R.id.bak).setVisibility(View.GONE);
+
+        // Hide linear layout 1 for first page
+        findViewById(R.id.lin1).setVisibility(View.GONE);
+
 
         prev = this.getIntent();
         data = prev.getExtras();
@@ -54,6 +58,7 @@ public class ReviewItem extends Activity {
     public void next(View v) throws JSONException {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         findViewById(R.id.bak).setVisibility(View.VISIBLE);
+        findViewById(R.id.lin1).setVisibility(View.VISIBLE);
 
         /**
         *  Determines if current review page has been visited or not, if yes, repopulate
@@ -63,12 +68,12 @@ public class ReviewItem extends Activity {
         *  consists of two elements, [0] is the numerical rating and [1] is any notes.
         **/
 
-        if (state < 5 && (reviews[state][0] == null)) {
+        if (state < 7 && (reviews[state][0] == null)) {
             reviews[state][0] = ((TextView)findViewById(R.id.ratinged)).getText().toString();
             reviews[state][1] = ((TextView)findViewById(R.id.notesed)).getText().toString();
             ((TextView) findViewById(R.id.notesed)).setText("");
             ((TextView) findViewById(R.id.ratinged)).setText("");
-        } else if (state < 5) {
+        } else if (state < 7) {
             ((TextView)findViewById(R.id.ratinged)).setText(reviews[state][0]);
             ((TextView)findViewById(R.id.notesed)).setText(reviews[state][1]);
         }
@@ -78,16 +83,23 @@ public class ReviewItem extends Activity {
         // Switch statement determining what review page you are on.
         switch (state) {
             case 1:
-                ((TextView)findViewById(R.id.cattitle)).setText("Acidity");
+                ((TextView)findViewById(R.id.cattitle)).setText("Sweetness");
+                ((TextView)findViewById(R.id.note)).setText("Notes:");
                 break;
             case 2:
-                ((TextView)findViewById(R.id.cattitle)).setText("Tannin");
+                ((TextView)findViewById(R.id.cattitle)).setText("Acidity");
                 break;
             case 3:
-                ((TextView)findViewById(R.id.cattitle)).setText("Fruit");
+                ((TextView)findViewById(R.id.cattitle)).setText("Tannin");
                 break;
             case 4:
+                ((TextView)findViewById(R.id.cattitle)).setText("Fruit");
+                break;
+            case 5:
                 ((TextView)findViewById(R.id.cattitle)).setText("Body");
+                break;
+            case 6:
+                ((TextView)findViewById(R.id.cattitle)).setText("Overall");
                 break;
             default:
 
@@ -95,33 +107,41 @@ public class ReviewItem extends Activity {
                 final JSONObject ret2 = new JSONObject();
                 ret2.put("wine",prev.getStringExtra("name"));
 
-                for(int i = 0; i < 5; i++){ // Iterate through saved array
+                for(int i = 0; i < 7; i++){ // Iterate through saved array
                     JSONObject temp = new JSONObject();
                     switch (i){
                         case 0:
-                            temp.put("Rating",reviews[i][0]);
-                            temp.put("Notes",reviews[i][1]);
-                            ret2.put("Sweetness",temp);
+                            ret2.put("Name",reviews[i][1]);
                             break;
                         case 1:
                             temp.put("Rating",reviews[i][0]);
                             temp.put("Notes",reviews[i][1]);
-                            ret2.put("Acidity",temp);
+                            ret2.put("Sweetness",temp);
                             break;
                         case 2:
                             temp.put("Rating",reviews[i][0]);
                             temp.put("Notes",reviews[i][1]);
-                            ret2.put("Tannin",temp);
+                            ret2.put("Acidity",temp);
                             break;
                         case 3:
                             temp.put("Rating",reviews[i][0]);
                             temp.put("Notes",reviews[i][1]);
-                            ret2.put("Fruit",temp);
+                            ret2.put("Tannin",temp);
                             break;
                         case 4:
                             temp.put("Rating",reviews[i][0]);
                             temp.put("Notes",reviews[i][1]);
+                            ret2.put("Fruit",temp);
+                            break;
+                        case 5:
+                            temp.put("Rating",reviews[i][0]);
+                            temp.put("Notes",reviews[i][1]);
                             ret2.put("Body",temp);
+                            break;
+                        case 6:
+                            temp.put("Rating",reviews[i][0]);
+                            temp.put("Notes",reviews[i][1]);
+                            ret2.put("Overall",temp);
                             break;
                     }
                 }
@@ -158,24 +178,37 @@ public class ReviewItem extends Activity {
     // to a previous review screen
     public void back(View v){
         state--;
-        if (state == 0)
-            findViewById(R.id.bak).setVisibility(View.GONE);
 
-        ((TextView)findViewById(R.id.ratinged)).setText(reviews[state][0]);
-        ((TextView)findViewById(R.id.notesed)).setText(reviews[state][1]);
+        if (state == 0) {
+            // First page does not have a ratings field
+            ((TextView) findViewById(R.id.notesed)).setText(reviews[state][1]);
+            findViewById(R.id.bak).setVisibility(View.GONE);
+            findViewById(R.id.lin1).setVisibility(View.GONE);
+
+        } else {
+            ((TextView) findViewById(R.id.ratinged)).setText(reviews[state][0]);
+            ((TextView) findViewById(R.id.notesed)).setText(reviews[state][1]);
+        }
 
         switch (state) {
             case 0:
-                ((TextView) findViewById(R.id.cattitle)).setText("Sweetness");
+                ((TextView) findViewById(R.id.cattitle)).setText("Name of Note");
+                ((TextView)findViewById(R.id.note)).setText("Notes:");
                 break;
             case 1:
-                ((TextView) findViewById(R.id.cattitle)).setText("Acidity");
+                ((TextView) findViewById(R.id.cattitle)).setText("Sweetness");
                 break;
             case 2:
-                ((TextView) findViewById(R.id.cattitle)).setText("Tannin");
+                ((TextView) findViewById(R.id.cattitle)).setText("Acidity");
                 break;
             case 3:
+                ((TextView) findViewById(R.id.cattitle)).setText("Tannin");
+                break;
+            case 4:
                 ((TextView) findViewById(R.id.cattitle)).setText("Fruit");
+                break;
+            case 5:
+                ((TextView) findViewById(R.id.cattitle)).setText("Body");
                 break;
         }
     }
