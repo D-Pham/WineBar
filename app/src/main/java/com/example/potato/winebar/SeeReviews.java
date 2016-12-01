@@ -79,11 +79,15 @@ public class SeeReviews extends Activity{
                             DataSnapshot body = child.child("Body");
                             DataSnapshot acidity = child.child("Acidity");
                             DataSnapshot tanin = child.child("Tannin");
+                            DataSnapshot name = child.child("name");
+                            DataSnapshot overall = child.child("Overall");
                             review item = new review((String)wine.getValue().toString().toLowerCase() + "2", (String)wine.getValue(), (String)date.getValue(),
                                     (String)sweetness.child("Notes").getValue(), (String)body.child("Notes").getValue(),
                                     (String)acidity.child("Notes").getValue(), (String)tanin.child("Notes").getValue(),
                                     (String)sweetness.child("Rating").getValue(), (String)body.child("Rating").getValue(),
-                                    (String)acidity.child("Rating").getValue(), (String)tanin.child("Rating").getValue());
+                                    (String)acidity.child("Rating").getValue(), (String)tanin.child("Rating").getValue(),
+                                    (String)name.getValue(), (String)overall.child("Notes").getValue(), (String)overall.child("Rating").getValue());
+                            System.out.println((String)wine.getValue().toString());
                             reviewItems.add(item);
                             update();
                         }
@@ -131,7 +135,9 @@ public class SeeReviews extends Activity{
                 intent.putExtra("BodyNotes", selection.bodyNotes);
                 intent.putExtra("SweetnessNotes",selection.sweetnessNotes);
                 intent.putExtra("TanninNotes",selection.tanninNotes);
-
+                intent.putExtra("name",selection.name);
+                intent.putExtra("Overall", selection.overallRating);
+                intent.putExtra("OverallNotes",selection.overallNotes);
 
 
 

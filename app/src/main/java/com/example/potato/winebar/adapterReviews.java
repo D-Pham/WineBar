@@ -9,6 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -44,6 +46,7 @@ public class adapterReviews extends BaseAdapter {
         ImageView pic;
         TextView name;
         TextView description;
+        TextView date;
     }
 
     @Override
@@ -54,7 +57,7 @@ public class adapterReviews extends BaseAdapter {
         LayoutInflater mInflater = (LayoutInflater) context
                 .getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.list_item, null);
+            convertView = mInflater.inflate(R.layout.list_review_item, null);
             holder = new ViewHolder();
 
             holder.pic = (ImageView) convertView
@@ -62,15 +65,16 @@ public class adapterReviews extends BaseAdapter {
             holder.name = (TextView) convertView
                     .findViewById(R.id.name);
             holder.description = (TextView) convertView.findViewById(R.id.description);
-
+            holder.date = (TextView) convertView.findViewById(R.id.date);
 
             review row_pos = rowItems.get(position);
             int id = context.getResources().getIdentifier(row_pos.getPic(), "drawable", context.getPackageName());
             System.out.println(id);
             holder.pic.setImageResource(id);
-            holder.name.setText(row_pos.getName());
-            holder.description.setText(row_pos.getDescription());
-
+            holder.name.setText(row_pos.name);
+            holder.description.setText(row_pos.wine);
+            String newstring = new SimpleDateFormat("yyyy-MM-dd").format((new Date(row_pos.date)));
+            holder.date.setText(newstring);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();

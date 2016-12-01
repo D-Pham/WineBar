@@ -18,7 +18,9 @@ public class review {
     String acidityNotes;
     String tanninNotes;
     String date;
-
+    String name;
+    String overallNotes;
+    String overallRating;
 
     public String getPic() {
         return pic;
@@ -72,7 +74,7 @@ public class review {
 
 
 
-    public review(String pic, String wine, String date, String sweetnessNotes, String bodyNotes, String acidityNotes, String tanninNotes, String sweetnessRating, String bodyRating, String acidityRating, String tanninRating){
+    public review(String pic, String wine, String date, String sweetnessNotes, String bodyNotes, String acidityNotes, String tanninNotes, String sweetnessRating, String bodyRating, String acidityRating, String tanninRating, String name, String overallNotes, String overallRating){
         this.pic = pic;
         this.wine = wine;
         this.date = date;
@@ -84,7 +86,9 @@ public class review {
         this.bodyRating = bodyRating;
         this.acidityRating = acidityRating;
         this.tanninRating = tanninRating;
-
+        this.name = name;
+        this.overallNotes = overallNotes;
+        this.overallRating = overallRating;
     }
 
 

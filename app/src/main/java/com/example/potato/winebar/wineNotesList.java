@@ -33,6 +33,14 @@ public class wineNotesList extends Activity {
 
         adapterWines adp = new adapterWines(this, items);
         list.setAdapter(adp);
+        switchView = (Button) findViewById(R.id.switchView);
+        switchView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), SeeReviews.class);
+                startActivity(intent);
+            }
+        });
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

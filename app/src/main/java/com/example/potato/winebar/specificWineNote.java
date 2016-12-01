@@ -32,13 +32,14 @@ public class specificWineNote extends Activity {
     Intent prev;
     Bundle data;
     String thisWine;
+    //Button switchView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         System.out.println("made it");
         setContentView(R.layout.activity_specific_wine_note);
         mDatabase = FirebaseDatabase.getInstance().getReference();
-
+        //switchView = (Button)findViewById(R.id.switchView);
         list = (ListView) findViewById(R.id.list);
         reviewItems = new ArrayList<review>();
         wineName = (TextView) findViewById(R.id.wine);
@@ -48,6 +49,14 @@ public class specificWineNote extends Activity {
         data = prev.getExtras();
         thisWine = (String)data.get("name");
         wineName.setText(thisWine);
+
+//        switchView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(getApplicationContext(), SeeReviews.class);
+//                startActivity(intent);
+//            }
+//        });
 
         mDatabase.child("user_keys").addValueEventListener(new ValueEventListener() {
             @Override
@@ -68,11 +77,14 @@ public class specificWineNote extends Activity {
                             DataSnapshot body = child.child("Body");
                             DataSnapshot acidity = child.child("Acidity");
                             DataSnapshot tanin = child.child("Tannin");
+                            DataSnapshot name = child.child("name");
+                            DataSnapshot overall = child.child("Overall");
                             review item = new review((String)wine.getValue().toString().toLowerCase() + "2", (String)wine.getValue(), (String)date.getValue(),
                                     (String)sweetness.child("Notes").getValue(), (String)body.child("Notes").getValue(),
                                     (String)acidity.child("Notes").getValue(), (String)tanin.child("Notes").getValue(),
                                     (String)sweetness.child("Rating").getValue(), (String)body.child("Rating").getValue(),
-                                    (String)acidity.child("Rating").getValue(), (String)tanin.child("Rating").getValue());
+                                    (String)acidity.child("Rating").getValue(), (String)tanin.child("Rating").getValue(),
+                                    (String)name.getValue(), (String)overall.child("Notes").getValue(), (String)overall.child("Rating").getValue());
                             System.out.println((String)wine.getValue().toString());
                             System.out.println(thisWine);
                             if(((String)wine.getValue().toString()).equals(thisWine)) {
@@ -124,7 +136,9 @@ public class specificWineNote extends Activity {
                 intent.putExtra("BodyNotes", selection.bodyNotes);
                 intent.putExtra("SweetnessNotes",selection.sweetnessNotes);
                 intent.putExtra("TanninNotes",selection.tanninNotes);
-
+                intent.putExtra("name",selection.name);
+                intent.putExtra("Overall", selection.overallRating);
+                intent.putExtra("OverallNotes",selection.overallNotes);
 
 
 
