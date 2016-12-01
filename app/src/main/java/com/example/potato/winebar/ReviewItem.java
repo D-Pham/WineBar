@@ -111,7 +111,7 @@ public class ReviewItem extends Activity {
                     JSONObject temp = new JSONObject();
                     switch (i){
                         case 0:
-                            ret2.put("Name",reviews[i][1]);
+                            ret2.put("name",reviews[i][1]);
                             break;
                         case 1:
                             temp.put("Rating",reviews[i][0]);
