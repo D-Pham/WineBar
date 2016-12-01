@@ -3,27 +3,25 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:text="Your Notes!"
+        android:text="Your Notes for"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textColorLink="?android:attr/textColorLink"
+        android:textColor="@color/colorAccent"
+        android:textSize="45dp" />
+    <TextView
+        android:text=""
+        android:id="@+id/wine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
         android:layout_marginBottom="20dp"
         android:textColorLink="?android:attr/textColorLink"
         android:textColor="@color/colorAccent"
         android:textSize="45dp" />
-    <Button
-        android:id="@+id/switchView"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:text="See Wine List"
-        android:textSize="16dp"
-        android:textColor="#262626"
-        android:textAllCaps="false"
-        android:background="@android:color/transparent"
-        android:stateListAnimator="@null"/>
 
     <ListView
         android:id="@+id/list"

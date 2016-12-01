@@ -2,13 +2,13 @@ package com.example.potato.winebar;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.support.test.espresso.core.deps.guava.reflect.TypeToken;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -17,47 +17,37 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.gson.Gson;
-
-import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-/**
- * Created by Ankush_2 on 11/27/2016.
- */
+public class specificWineNote extends Activity {
 
-public class SeeReviews extends Activity{
     private DatabaseReference mDatabase;
 
     List<review> reviewItems;
     ListView list;
-    Button switchView;
+    TextView wineName;
+    Intent prev;
+    Bundle data;
+    String thisWine;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_seereviews);
+        System.out.println("made it");
+        setContentView(R.layout.activity_specific_wine_note);
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
         list = (ListView) findViewById(R.id.list);
         reviewItems = new ArrayList<review>();
-        switchView = (Button)findViewById(R.id.switchView);
+        wineName = (TextView) findViewById(R.id.wine);
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         final String email = user.getEmail().replace(".","&");
-
-        switchView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), wineNotesList.class);
-                startActivity(intent);
-            }
-        });
-
+        prev = this.getIntent();
+        data = prev.getExtras();
+        thisWine = (String)data.get("name");
+        wineName.setText(thisWine);
 
         mDatabase.child("user_keys").addValueEventListener(new ValueEventListener() {
             @Override
@@ -65,7 +55,6 @@ public class SeeReviews extends Activity{
 
                 // Retrieves FireBase data to get the unique key of the current user.
                 String uKey = ((HashMap<String,String>)snapshot.getValue()).get(email).toString();
-                System.out.println("asd");
                 System.out.println(uKey);
                 mDatabase.child("users").child(uKey).child("reviews").addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -84,8 +73,12 @@ public class SeeReviews extends Activity{
                                     (String)acidity.child("Notes").getValue(), (String)tanin.child("Notes").getValue(),
                                     (String)sweetness.child("Rating").getValue(), (String)body.child("Rating").getValue(),
                                     (String)acidity.child("Rating").getValue(), (String)tanin.child("Rating").getValue());
-                            reviewItems.add(item);
-                            update();
+                            System.out.println((String)wine.getValue().toString());
+                            System.out.println(thisWine);
+                            if(((String)wine.getValue().toString()).equals(thisWine)) {
+                                reviewItems.add(item);
+                                update();
+                            }
                         }
                         System.out.println("asd");
                         System.out.println(reviewItems);
@@ -143,5 +136,4 @@ public class SeeReviews extends Activity{
         adapterReviews adp = new adapterReviews(this, reviewItems);
         list.setAdapter(adp);
     }
-
 }

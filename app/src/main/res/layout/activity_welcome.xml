@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Write a Review           See Notes"
+            android:text="Write a Review          See Notes"
             android:textSize="24sp"
             android:textColor="#323232"></TextView>
         <LinearLayout

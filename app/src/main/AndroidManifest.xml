@@ -25,10 +25,12 @@
         <activity android:name=".barlist" />
         <activity android:name=".barselect" />
         <activity android:name=".Register" />
-        <activity android:name=".ReviewItem"/>
-        <activity android:name=".Welcome"/>
-        <activity android:name=".SeeReviews"/>
-        <activity android:name=".ReviewDetailActivity"></activity>
+        <activity android:name=".ReviewItem" />
+        <activity android:name=".Welcome" />
+        <activity android:name=".SeeReviews" />
+        <activity android:name=".ReviewDetailActivity" />
+        <activity android:name=".wineNotesList" />
+        <activity android:name=".specificWineNote"></activity>
     </application>
 
 </manifest>
