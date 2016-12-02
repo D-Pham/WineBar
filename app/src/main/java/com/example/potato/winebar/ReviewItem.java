@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -67,110 +68,114 @@ public class ReviewItem extends Activity {
         *  store the data into a String[][] array. First [] refers to review page # and second []
         *  consists of two elements, [0] is the numerical rating and [1] is any notes.
         **/
+        if ((((TextView) findViewById(R.id.notesed)).getText().toString().equals("")
+            || ((TextView) findViewById(R.id.ratinged)).getText().toString().equals("")) && state != 0){
+            Toast.makeText(getApplicationContext(),"Please fill in all fields.", Toast.LENGTH_SHORT);
+        } else {
+            if (state < 7 && (reviews[state][1] == null)) {
+                reviews[state][0] = ((TextView)findViewById(R.id.ratinged)).getText().toString();
+                reviews[state][1] = ((TextView)findViewById(R.id.notesed)).getText().toString();
+                ((TextView) findViewById(R.id.notesed)).setText("");
+                ((TextView) findViewById(R.id.ratinged)).setText("");
+            } else if (state < 7) {
+                ((TextView)findViewById(R.id.ratinged)).setText(reviews[state+1][0]);
+                ((TextView)findViewById(R.id.notesed)).setText(reviews[state+1][1]);
+            }
 
-        if (state < 7 && (reviews[state][1] == null)) {
-            reviews[state][0] = ((TextView)findViewById(R.id.ratinged)).getText().toString();
-            reviews[state][1] = ((TextView)findViewById(R.id.notesed)).getText().toString();
-            ((TextView) findViewById(R.id.notesed)).setText("");
-            ((TextView) findViewById(R.id.ratinged)).setText("");
-        } else if (state < 7) {
-            ((TextView)findViewById(R.id.ratinged)).setText(reviews[state+1][0]);
-            ((TextView)findViewById(R.id.notesed)).setText(reviews[state+1][1]);
-        }
+            state++;
 
-        state++;
+            // Switch statement determining what review page you are on.
+            switch (state) {
+                case 1:
+                    ((TextView)findViewById(R.id.cattitle)).setText("Sweetness");
+                    ((TextView)findViewById(R.id.note)).setText("Notes:");
+                    break;
+                case 2:
+                    ((TextView)findViewById(R.id.cattitle)).setText("Acidity");
+                    break;
+                case 3:
+                    ((TextView)findViewById(R.id.cattitle)).setText("Tannin");
+                    break;
+                case 4:
+                    ((TextView)findViewById(R.id.cattitle)).setText("Fruit");
+                    break;
+                case 5:
+                    ((TextView)findViewById(R.id.cattitle)).setText("Body");
+                    break;
+                case 6:
+                    ((TextView)findViewById(R.id.cattitle)).setText("Overall");
+                    break;
+                default:
 
-        // Switch statement determining what review page you are on.
-        switch (state) {
-            case 1:
-                ((TextView)findViewById(R.id.cattitle)).setText("Sweetness");
-                ((TextView)findViewById(R.id.note)).setText("Notes:");
-                break;
-            case 2:
-                ((TextView)findViewById(R.id.cattitle)).setText("Acidity");
-                break;
-            case 3:
-                ((TextView)findViewById(R.id.cattitle)).setText("Tannin");
-                break;
-            case 4:
-                ((TextView)findViewById(R.id.cattitle)).setText("Fruit");
-                break;
-            case 5:
-                ((TextView)findViewById(R.id.cattitle)).setText("Body");
-                break;
-            case 6:
-                ((TextView)findViewById(R.id.cattitle)).setText("Overall");
-                break;
-            default:
+                    // Default means end of review reached and commits saved data to a JSON object
+                    final JSONObject ret2 = new JSONObject();
+                    ret2.put("wine",prev.getStringExtra("name"));
 
-                // Default means end of review reached and commits saved data to a JSON object
-                final JSONObject ret2 = new JSONObject();
-                ret2.put("wine",prev.getStringExtra("name"));
-
-                for(int i = 0; i < 7; i++){ // Iterate through saved array
-                    JSONObject temp = new JSONObject();
-                    switch (i){
-                        case 0:
-                            ret2.put("name",reviews[i][1]);
-                            break;
-                        case 1:
-                            temp.put("Rating",reviews[i][0]);
-                            temp.put("Notes",reviews[i][1]);
-                            ret2.put("Sweetness",temp);
-                            break;
-                        case 2:
-                            temp.put("Rating",reviews[i][0]);
-                            temp.put("Notes",reviews[i][1]);
-                            ret2.put("Acidity",temp);
-                            break;
-                        case 3:
-                            temp.put("Rating",reviews[i][0]);
-                            temp.put("Notes",reviews[i][1]);
-                            ret2.put("Tannin",temp);
-                            break;
-                        case 4:
-                            temp.put("Rating",reviews[i][0]);
-                            temp.put("Notes",reviews[i][1]);
-                            ret2.put("Fruit",temp);
-                            break;
-                        case 5:
-                            temp.put("Rating",reviews[i][0]);
-                            temp.put("Notes",reviews[i][1]);
-                            ret2.put("Body",temp);
-                            break;
-                        case 6:
-                            temp.put("Rating",reviews[i][0]);
-                            temp.put("Notes",reviews[i][1]);
-                            ret2.put("Overall",temp);
-                            break;
+                    for(int i = 0; i < 7; i++){ // Iterate through saved array
+                        JSONObject temp = new JSONObject();
+                        switch (i){
+                            case 0:
+                                ret2.put("name",reviews[i][1]);
+                                break;
+                            case 1:
+                                temp.put("Rating",reviews[i][0]);
+                                temp.put("Notes",reviews[i][1]);
+                                ret2.put("Sweetness",temp);
+                                break;
+                            case 2:
+                                temp.put("Rating",reviews[i][0]);
+                                temp.put("Notes",reviews[i][1]);
+                                ret2.put("Acidity",temp);
+                                break;
+                            case 3:
+                                temp.put("Rating",reviews[i][0]);
+                                temp.put("Notes",reviews[i][1]);
+                                ret2.put("Tannin",temp);
+                                break;
+                            case 4:
+                                temp.put("Rating",reviews[i][0]);
+                                temp.put("Notes",reviews[i][1]);
+                                ret2.put("Fruit",temp);
+                                break;
+                            case 5:
+                                temp.put("Rating",reviews[i][0]);
+                                temp.put("Notes",reviews[i][1]);
+                                ret2.put("Body",temp);
+                                break;
+                            case 6:
+                                temp.put("Rating",reviews[i][0]);
+                                temp.put("Notes",reviews[i][1]);
+                                ret2.put("Overall",temp);
+                                break;
+                        }
                     }
-                }
 
-                final DatabaseReference root = FirebaseDatabase.getInstance().getReference();
-                final String email = user.getEmail().replace(".","&");
+                    final DatabaseReference root = FirebaseDatabase.getInstance().getReference();
+                    final String email = user.getEmail().replace(".","&");
 
-                // Adds timestamp to the object
-                ret2.put("Date",(new Date().toString()));
+                    // Adds timestamp to the object
+                    ret2.put("Date",(new Date().toString()));
 
-                root.child("user_keys").addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot snapshot) {
-                        // Retrieves FireBase data to get the unique key of the current user.
-                        uKey = ((HashMap<String,String>)snapshot.getValue()).get(email).toString();
+                    root.child("user_keys").addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot snapshot) {
+                            // Retrieves FireBase data to get the unique key of the current user.
+                            uKey = ((HashMap<String,String>)snapshot.getValue()).get(email).toString();
 
-                        // Converts JSON to Gson to map out data to be committed to FireBase
-                        Map<String, Object> poot = new Gson().fromJson(ret2.toString(), new TypeToken<HashMap<String, Object>>(){}.getType());
+                            // Converts JSON to Gson to map out data to be committed to FireBase
+                            Map<String, Object> poot = new Gson().fromJson(ret2.toString(), new TypeToken<HashMap<String, Object>>(){}.getType());
 
-                        // Updates the user child with new reviews
-                        root.child("users/").child(uKey).child("reviews").push().setValue(poot);
-                    }
-                    @Override public void onCancelled(DatabaseError error) {}
-                });
+                            // Updates the user child with new reviews
+                            root.child("users/").child(uKey).child("reviews").push().setValue(poot);
+                        }
+                        @Override public void onCancelled(DatabaseError error) {}
+                    });
 
-                // Review intent finished. Return to welcome page.
-                Intent done = new Intent(this,Welcome.class);
-                startActivity(done);
-                break;
+                    // Review intent finished. Return to welcome page.
+                    Intent done = new Intent(this,Welcome.class);
+                    startActivity(done);
+                    break;
+            }
         }
     }
 
