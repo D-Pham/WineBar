@@ -11,6 +11,8 @@ public class Welcome extends Activity {
 
     ImageButton edit;
     ImageButton notes;
+    ImageButton cart;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,8 @@ public class Welcome extends Activity {
 
         edit = (ImageButton)findViewById(R.id.editButton);
         notes = (ImageButton)findViewById(R.id.notesButton);
+        cart = (ImageButton)findViewById(R.id.cartButton);
+
 
         edit.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -36,6 +40,16 @@ public class Welcome extends Activity {
                 startActivity(temp);
             }
         });
+
+        cart.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                // Go to purchase wines
+                Intent temp = new Intent(Welcome.this, PurchaseWines.class);
+                startActivity(temp);
+            }
+        });
+
 
     }
 }

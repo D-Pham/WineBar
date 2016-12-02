@@ -29,7 +29,8 @@
         <activity android:name=".SeeReviews" />
         <activity android:name=".ReviewDetailActivity" />
         <activity android:name=".wineNotesList" />
-        <activity android:name=".specificWineNote"></activity>
+        <activity android:name=".specificWineNote"/>
+        <activity android:name=".PurchaseWines"></activity>
     </application>
 
 </manifest>
