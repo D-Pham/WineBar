@@ -5,7 +5,11 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Ankush_2 on 11/27/2016.
@@ -15,7 +19,8 @@ public class ReviewDetailActivity extends Activity {
 
     Intent prev;
     Bundle data;
-
+    List<finalReview> items;
+    ListView list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,35 +29,45 @@ public class ReviewDetailActivity extends Activity {
 
         // TODO - implement the Activity
 
-        TextView acidityVal  = (TextView) findViewById(R.id.acidityVal);
-        TextView  tanninVal  = (TextView) findViewById(R.id.tanninVal);
-        TextView  wine_name  = (TextView) findViewById(R.id.wine_name);
-        TextView  sweetnessVal  = (TextView) findViewById(R.id.sweetnessVal);
-        TextView  bodyVal  = (TextView) findViewById(R.id.bodyVal);
+        list = (ListView) findViewById(R.id.list);
+        items = new ArrayList<finalReview>();
 
-        //ImageView pic = (ImageView) findViewById(R.id.pic);
+        String name = getIntent().getStringExtra("name");
+        String wine = getIntent().getStringExtra("wine");
+        String soverallRating = getIntent().getStringExtra("Overall");
+        String soverallNotes = getIntent().getStringExtra("OverallNotes");
+        String sacidityRating = getIntent().getStringExtra("Acidity");
+        String sacidityNotes = getIntent().getStringExtra("AcidityNotes");
+        String stanninRating = getIntent().getStringExtra("Tannin");
+        String stanninNotes = getIntent().getStringExtra("TanninNotes");
+        String ssweetnessRating = getIntent().getStringExtra("Sweetness");
+        String ssweetnessNotes = getIntent().getStringExtra("SweetnessNotes");
+        String sbodyRating = getIntent().getStringExtra("Body");
+        String sbodyNotes = getIntent().getStringExtra("BodyNotes");
+        String sfruitRating = getIntent().getStringExtra("Fruit");
+        String sfruitNotes = getIntent().getStringExtra("FruitNotes");
 
+        TextView  noteName  = (TextView) findViewById(R.id.name);
+        TextView  wineName  = (TextView) findViewById(R.id.wine);
+        TextView  overallRating  = (TextView) findViewById(R.id.overallRating);
+        TextView  overallNotes  = (TextView) findViewById(R.id.overallNotes);
 
-        TextView acidityNotes  = (TextView) findViewById(R.id.acidityNotes);
-        TextView  tanninNotes  = (TextView) findViewById(R.id.tanninNotes);
-        TextView  sweetnessNotes  = (TextView) findViewById(R.id.sweetnessNotes);
-        TextView  bodyNotes  = (TextView) findViewById(R.id.bodyNotes);
+        noteName.setText(name);
+        wineName.setText(wine);
+        overallRating.setText("Overall Rating: " + soverallRating);
+        overallNotes.setText(soverallNotes);
 
+        System.out.println("ASd");
+        System.out.println(soverallRating);
 
-        acidityVal.setText(getIntent().getStringExtra("Acidity"));
-        tanninVal.setText(getIntent().getStringExtra("Tannin"));
-        wine_name.setText(getIntent().getStringExtra("wine"));
+        items.add(new finalReview("Acidity", sacidityRating, sacidityNotes));
+        items.add(new finalReview("Fruit", sfruitRating, sfruitNotes));
+        items.add(new finalReview("Tannin", stanninRating, stanninNotes));
+        items.add(new finalReview("Sweetness", ssweetnessRating, ssweetnessNotes));
+        //items.add(new finalReview("Body", sbodyRating, sbodyNotes));
 
-        sweetnessVal.setText(getIntent().getStringExtra("Sweetness"));
-
-        bodyVal.setText(getIntent().getStringExtra("Body"));
-
-
-        acidityNotes.setText(getIntent().getStringExtra("AcidityNotes"));
-        tanninNotes.setText(getIntent().getStringExtra("TanninNotes"));
-        sweetnessNotes.setText(getIntent().getStringExtra("SweetnessNotes"));
-
-        bodyNotes.setText(getIntent().getStringExtra("BodyNotes"));
+        adapterFinal adp = new adapterFinal(this, items);
+        list.setAdapter(adp);
 
         //flag.setImageBitmap(getIntent().getBundleExtra()get("Flag"));
 

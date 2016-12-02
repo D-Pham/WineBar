@@ -79,12 +79,14 @@ public class specificWineNote extends Activity {
                             DataSnapshot tanin = child.child("Tannin");
                             DataSnapshot name = child.child("name");
                             DataSnapshot overall = child.child("Overall");
+                            DataSnapshot fruit = child.child("Fruit");
                             review item = new review((String)wine.getValue().toString().toLowerCase() + "2", (String)wine.getValue(), (String)date.getValue(),
                                     (String)sweetness.child("Notes").getValue(), (String)body.child("Notes").getValue(),
                                     (String)acidity.child("Notes").getValue(), (String)tanin.child("Notes").getValue(),
                                     (String)sweetness.child("Rating").getValue(), (String)body.child("Rating").getValue(),
                                     (String)acidity.child("Rating").getValue(), (String)tanin.child("Rating").getValue(),
-                                    (String)name.getValue(), (String)overall.child("Notes").getValue(), (String)overall.child("Rating").getValue());
+                                    (String)name.getValue(), (String)overall.child("Notes").getValue(), (String)overall.child("Rating").getValue(),
+                                    (String)fruit.child("Notes").getValue(), (String)fruit.child("Rating").getValue());
                             System.out.println((String)wine.getValue().toString());
                             System.out.println(thisWine);
                             if(((String)wine.getValue().toString()).equals(thisWine)) {
@@ -131,7 +133,6 @@ public class specificWineNote extends Activity {
                 intent.putExtra("Body", selection.bodyRating);
                 intent.putExtra("Sweetness",selection.sweetnessRating);
                 intent.putExtra("Tannin",selection.tanninRating);
-
                 intent.putExtra("AcidityNotes",selection.acidityNotes);
                 intent.putExtra("BodyNotes", selection.bodyNotes);
                 intent.putExtra("SweetnessNotes",selection.sweetnessNotes);
@@ -139,7 +140,8 @@ public class specificWineNote extends Activity {
                 intent.putExtra("name",selection.name);
                 intent.putExtra("Overall", selection.overallRating);
                 intent.putExtra("OverallNotes",selection.overallNotes);
-
+                intent.putExtra("Fruit", selection.fruitRating);
+                intent.putExtra("FruitNotes",selection.fruitNotes);
 
 
                 startActivity(intent);

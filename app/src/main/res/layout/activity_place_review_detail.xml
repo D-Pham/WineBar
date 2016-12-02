@@ -1,179 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp" >
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/winePic"
-        android:layout_width="300dp"
-        android:layout_height="158dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingLeft="50dp"
         android:padding="8dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:contentDescription="wine" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/winePic"
-        android:layout_margin="8dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:textColorLink="?android:attr/textColorLink"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp" />
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/wine"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:textColorLink="?android:attr/textColorLink"
+                android:textColor="@color/colorAccent"
+                android:textSize="25dp" />
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:id="@+id/textView12"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:layout_marginBottom="10dp"
+                android:layout_height="2px" />
+            <TextView
+                android:text="Rating: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/overallRating"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+            <TextView
+                android:text="Description: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"
+                android:textSize="20dp" />
+            <TextView
+                android:text="This is my new favorite wine. Nothing can beat the test and feel."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/overallNotes"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:textSize="15dp" />
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:layout_marginBottom="10dp"
+                android:layout_height="2px" />
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="307dp"
+                android:layout_weight="0.09">
 
-        <TextView
-            android:id="@+id/wine_string"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wine: "
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#000000" />
+            </ListView>
 
-        <TextView
-            android:id="@+id/wine_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/wine_string"
-            android:layout_toRightOf="@+id/wine_string"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#000000" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/sweetness_string"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/wine_name"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:text="Sweetness: "
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/sweetnessVal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/sweetness_string"
-            android:layout_below="@+id/wine_name"
-            android:layout_toRightOf="@+id/sweetness_string"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#000000" />
-
-
-        <TextView
-            android:id="@+id/sweetnessNotes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/sweetnessVal"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/tannin_string"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/sweetnessNotes"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:text="Tannin: "
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/tanninVal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/tannin_string"
-            android:layout_below="@+id/sweetnessNotes"
-            android:layout_toRightOf="@+id/tannin_string"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/tanninNotes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tanninVal"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#000000" />
-
-
-        <TextView
-            android:id="@+id/acidity_string"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tanninNotes"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:text="Acidity: "
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/acidityVal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/acidity_string"
-            android:layout_toRightOf="@+id/acidity_string"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#000000" />
-
-
-        <TextView
-            android:id="@+id/acidityNotes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/acidityVal"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#000000" />
-
-
-
-        <TextView
-            android:id="@+id/body_string"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/acidityNotes"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:text="Body: "
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/bodyVal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/body_string"
-            android:layout_toRightOf="@+id/body_string"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/bodyNotes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/bodyVal"
-            android:ellipsize="end"
-            android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textColor="#000000" />
-
-
-    </RelativeLayout>
-
-</RelativeLayout>
+</LinearLayout>

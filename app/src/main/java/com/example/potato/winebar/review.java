@@ -21,6 +21,8 @@ public class review {
     String name;
     String overallNotes;
     String overallRating;
+    String fruitNotes;
+    String fruitRating;
 
     public String getPic() {
         return pic;
@@ -74,7 +76,7 @@ public class review {
 
 
 
-    public review(String pic, String wine, String date, String sweetnessNotes, String bodyNotes, String acidityNotes, String tanninNotes, String sweetnessRating, String bodyRating, String acidityRating, String tanninRating, String name, String overallNotes, String overallRating){
+    public review(String pic, String wine, String date, String sweetnessNotes, String bodyNotes, String acidityNotes, String tanninNotes, String sweetnessRating, String bodyRating, String acidityRating, String tanninRating, String name, String overallNotes, String overallRating, String fruitNotes, String fruitRating){
         this.pic = pic;
         this.wine = wine;
         this.date = date;
@@ -89,6 +91,8 @@ public class review {
         this.name = name;
         this.overallNotes = overallNotes;
         this.overallRating = overallRating;
+        this.fruitNotes = fruitNotes;
+        this.fruitRating = fruitRating;
     }
 
 
