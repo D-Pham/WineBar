@@ -25,11 +25,15 @@ public class wineNotesList extends Activity {
 
         list = (ListView) findViewById(R.id.list);
         items = new ArrayList<wines>();
-        items.add(new wines("merlot2", "Merlot", "Red Wine"));
+        items.add(new wines("chardonnay2", "Chardonnay", "White Wine"));
         items.add(new wines("riesling2", "Riesling", "White Wine"));
-        items.add(new wines("mourvedre2", "Mourvedre", "Red Wine"));
         items.add(new wines("cava2", "Cava", "White Wine"));
+        items.add(new wines("gewurztraminer2", "Gewürztraminer", "White Wine"));
+        items.add(new wines("merlot2", "Merlot", "Red Wine"));
+        items.add(new wines("beaujolais2", "Beaujolais", "Red Wine"));
+        items.add(new wines("mourvedre2", "Mourvedre", "Red Wine"));
         items.add(new wines("barbaresco2", "Barbaresco", "Red Wine"));
+        items.add(new wines("claret2", "Claret", "Red Wine"));
 
         adapterWines adp = new adapterWines(this, items);
         list.setAdapter(adp);
