@@ -70,7 +70,7 @@ public class ReviewItem extends Activity {
         **/
         if ((((TextView) findViewById(R.id.notesed)).getText().toString().equals("")
             || ((TextView) findViewById(R.id.ratinged)).getText().toString().equals("")) && state != 0){
-            Toast.makeText(getApplicationContext(),"Please fill in all fields.", Toast.LENGTH_SHORT);
+            Toast.makeText(getApplicationContext(),"Please fill in all fields.", Toast.LENGTH_SHORT).show();
         } else {
             if (state < 7 && (reviews[state][1] == null)) {
                 reviews[state][0] = ((TextView)findViewById(R.id.ratinged)).getText().toString();
