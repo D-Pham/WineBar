@@ -69,17 +69,19 @@ public class adapterFinal extends BaseAdapter {
             holder.notes = (TextView) convertView.findViewById(R.id.Notes);
 
 
-            finalReview row_pos = rowItems.get(position);
-            System.out.println(row_pos);
-            System.out.println(row_pos.review);
-            holder.review.setText(row_pos.review);
-            holder.rating.setText("Rating:  " + row_pos.rating);
-            holder.notes.setText(row_pos.notes);
-
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
+
+
+        finalReview row_pos = rowItems.get(position);
+        System.out.println(row_pos);
+        System.out.println(row_pos.review);
+        holder.review.setText(row_pos.review);
+        holder.rating.setText("Rating:  " + row_pos.rating);
+        holder.notes.setText(row_pos.notes);
+
 
         return convertView;
     }

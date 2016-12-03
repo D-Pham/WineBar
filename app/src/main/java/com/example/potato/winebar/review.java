@@ -76,7 +76,10 @@ public class review {
 
 
 
-    public review(String pic, String wine, String date, String sweetnessNotes, String bodyNotes, String acidityNotes, String tanninNotes, String sweetnessRating, String bodyRating, String acidityRating, String tanninRating, String name, String overallNotes, String overallRating, String fruitNotes, String fruitRating){
+    public review(String pic, String wine, String date, String sweetnessNotes, String bodyNotes, String acidityNotes,
+                  String tanninNotes, String sweetnessRating, String bodyRating, String acidityRating,
+                  String tanninRating, String name, String overallNotes, String overallRating,
+                  String fruitNotes, String fruitRating){
         this.pic = pic;
         this.wine = wine;
         this.date = date;

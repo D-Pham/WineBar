@@ -53,6 +53,9 @@ public class Cart extends Activity {
         winesAndQuantities.put("Claret", Integer.parseInt(getIntent().getStringExtra("Claret")));
 
 
+
+        System.out.println(winesAndQuantities);
+
         for (String s: winesAndQuantities.keySet()) {
             cartObject c;
             if (winesAndQuantities.get(s) > 0) {

@@ -64,8 +64,9 @@ public class ReviewDetailActivity extends Activity {
         items.add(new finalReview("Fruit", sfruitRating, sfruitNotes));
         items.add(new finalReview("Tannin", stanninRating, stanninNotes));
         items.add(new finalReview("Sweetness", ssweetnessRating, ssweetnessNotes));
-        //items.add(new finalReview("Body", sbodyRating, sbodyNotes));
+        items.add(new finalReview("Body", sbodyRating, sbodyNotes));
 
+        System.out.println("items");
         adapterFinal adp = new adapterFinal(this, items);
         list.setAdapter(adp);
 

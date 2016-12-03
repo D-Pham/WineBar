@@ -67,18 +67,20 @@ public class adapterReviews extends BaseAdapter {
             holder.description = (TextView) convertView.findViewById(R.id.description);
             holder.date = (TextView) convertView.findViewById(R.id.date);
 
-            review row_pos = rowItems.get(position);
-            int id = context.getResources().getIdentifier(row_pos.getPic(), "drawable", context.getPackageName());
-            System.out.println(id);
-            holder.pic.setImageResource(id);
-            holder.name.setText(row_pos.name);
-            holder.description.setText(row_pos.wine);
-            String newstring = new SimpleDateFormat("yyyy-MM-dd").format((new Date(row_pos.date)));
-            holder.date.setText(newstring);
+
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
+
+        review row_pos = rowItems.get(position);
+        int id = context.getResources().getIdentifier(row_pos.getPic(), "drawable", context.getPackageName());
+        System.out.println(id);
+        holder.pic.setImageResource(id);
+        holder.name.setText(row_pos.name);
+        holder.description.setText(row_pos.wine);
+        String newstring = new SimpleDateFormat("yyyy-MM-dd").format((new Date(row_pos.date)));
+        holder.date.setText(newstring);
 
         return convertView;
     }

@@ -46,7 +46,7 @@ public class PurchaseWines extends Activity {
      //           System.out.println("Cava " + cavaQuantity.getText().toString());
 
 
-                Intent intent = new Intent(PurchaseWines.this, Cart.class);
+                Intent intent = new Intent(getApplicationContext(), Cart.class);
 
                   intent.putExtra("Cava", cavaQuantity.getText().toString());
                   intent.putExtra("Riesling",  rieslingQuantity.getText().toString());
@@ -55,7 +55,7 @@ public class PurchaseWines extends Activity {
                  intent.putExtra("Barbaresco",  barbarescoQuantity.getText().toString());
                 intent.putExtra("Chardonnay",  chardonnayQuantity.getText().toString());
                 intent.putExtra("Gewürztraminer",  gewurztraminerQuantity.getText().toString());
-                intent.putExtra("Beaujolais",  barbarescoQuantity.getText().toString());
+                intent.putExtra("Beaujolais",  beaujolaisQuantity.getText().toString());
                 intent.putExtra("Claret",  claretQuantity.getText().toString());
 
 

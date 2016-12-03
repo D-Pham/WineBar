@@ -43,6 +43,8 @@ public class adapterCart extends BaseAdapter {
         TextView name;
         TextView quantity;
         TextView totalPrice;
+        TextView test;
+
     }
 
     @Override
@@ -63,20 +65,27 @@ public class adapterCart extends BaseAdapter {
             holder.quantity = (TextView) convertView.findViewById(R.id.quantity);
             holder.totalPrice = (TextView) convertView.findViewById(R.id.total_price);
 
-            cartObject row_pos = rowItems.get(position);
-            int id = context.getResources().getIdentifier(row_pos.getPic(), "drawable", context.getPackageName());
-            System.out.println(id);
-            holder.pic.setImageResource(id);
-            holder.name.setText(row_pos.wineName);
-            holder.quantity.setText("Quantity: " + row_pos.quantity);
-           // String newstring = new SimpleDateFormat("yyyy-MM-dd").format((new Date(row_pos.date)));
-            Integer price = 20 * Integer.parseInt(row_pos.quantity);
+            System.out.println(position);
+          //  cartObject row_pos = rowItems.get(position);
+          //  int id = context.getResources().getIdentifier(row_pos.getPic(), "drawable", context.getPackageName());
+           // System.out.println(id);
 
-           holder.totalPrice.setText("Price: " + price.toString());
             convertView.setTag(holder);
         } else {
             holder = (adapterCart.ViewHolder) convertView.getTag();
         }
+        cartObject row_pos = rowItems.get(position);
+        int id = context.getResources().getIdentifier(row_pos.getPic(), "drawable", context.getPackageName());
+        System.out.println(id);
+
+        holder.pic.setImageResource(id);
+        holder.name.setText(row_pos.wineName);
+        holder.quantity.setText("Quantity: " + row_pos.quantity);
+        // String newstring = new SimpleDateFormat("yyyy-MM-dd").format((new Date(row_pos.date)));
+        Integer price = 20 * Integer.parseInt(row_pos.quantity);
+
+        holder.totalPrice.setText("Price: " + price.toString());
+
 
         return convertView;
     }
