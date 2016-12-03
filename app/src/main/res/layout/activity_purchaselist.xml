@@ -44,7 +44,7 @@
 
             <TextView
                 android:layout_gravity="center"
-                android:text="Merlot"
+                android:text="Merlot                 $25"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/merlotText"
@@ -98,7 +98,7 @@
         <TextView
             android:layout_gravity="center"
 
-            android:text="Cava"
+            android:text="Cava                 $20"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:id="@+id/cavaText"
@@ -149,7 +149,7 @@
             <TextView
                 android:layout_gravity="center"
 
-                android:text="Barbaresco"
+                android:text="Barbaresco             $23"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/barbarescoText"
@@ -201,7 +201,7 @@
             <TextView
                 android:layout_gravity="center"
 
-                android:text="Mourvedre"
+                android:text="Mourvedre             $25"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/mourvedreText"
@@ -252,7 +252,7 @@
             <TextView
                 android:layout_gravity="center"
 
-                android:text="Riesling"
+                android:text="Riesling             $25"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/rieslingText"
@@ -303,7 +303,7 @@
             <TextView
                 android:layout_gravity="center"
 
-                android:text="Chardonnay"
+                android:text="Chardonnay             $25"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/chardonnayText"
@@ -354,7 +354,7 @@
             <TextView
                 android:layout_gravity="center"
 
-                android:text="Gewurztraminer"
+                android:text="Gewurztraminer              $25"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/gewurztraminerText"
@@ -405,7 +405,7 @@
             <TextView
                 android:layout_gravity="center"
 
-                android:text="Beaujolais"
+                android:text="Beaujolais              $25"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/beaujolaisText"
@@ -456,7 +456,7 @@
             <TextView
                 android:layout_gravity="center"
 
-                android:text="Claret"
+                android:text="Claret              $32"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/claretText"
