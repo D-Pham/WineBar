@@ -3,8 +3,6 @@ package com.example.potato.winebar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.support.test.espresso.core.deps.guava.reflect.TypeToken;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -17,15 +15,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.gson.Gson;
-
-import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by Ankush_2 on 11/27/2016.

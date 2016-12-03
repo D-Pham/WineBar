@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_confirmation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    tools:context=".Confirmation">
+
+    <TextView
+        android:text="Order Summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView9"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:text="Place My Order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:id="@+id/place_order_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="This is what you want to buy:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:id="@+id/listView" />
+
+    <TextView
+        android:text="This is where you want it sent:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/listView"
+        android:layout_alignStart="@+id/textView13" />
+
+    <TextView
+        android:text="Card ending in:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView25"
+        android:layout_marginBottom="106dp"
+        android:layout_above="@+id/place_order_button"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="This is how you want to pay for it:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/textView25"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView15"
+        android:id="@+id/customerStreetAddr" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customerCity"
+        android:layout_below="@+id/customerStreetAddr"
+        android:layout_alignStart="@+id/customerStreetAddr"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:text="XXXX-XXXX-XXXX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardLastDigits"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customerState"
+        android:layout_alignBaseline="@+id/customerCity"
+        android:layout_alignBottom="@+id/customerCity"
+        android:layout_toEndOf="@+id/cardLastDigits" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customerZip"
+        android:layout_alignBaseline="@+id/customerCity"
+        android:layout_alignBottom="@+id/customerCity"
+        android:layout_alignEnd="@+id/textView25" />
+
+    <!--<TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customerState"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/place_order_button"
+        android:layout_alignParentEnd="true" />-->
+
+    <!--<TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customerCity"
+        android:gravity="left"
+        android:layout_below="@+id/textView15"
+        android:layout_toStartOf="@+id/customerState" />-->
+
+    <!--<TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customerZip"
+        android:layout_above="@+id/customerStreetAddr"
+        android:layout_alignStart="@+id/customerStreetAddr" />-->
+
+    <!--<TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customerStreetAddr"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/textView15"
+        android:layout_alignStart="@+id/textView15" />-->
+
+</RelativeLayout>

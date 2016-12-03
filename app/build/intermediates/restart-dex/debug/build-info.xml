@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.2"
+    timestamp="1048056246158911"
+    token="-1705615474320572619"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="485" />
+    <task
+        name="instant-run-dex"
+        duration="58" />
+    <task
+        name="instant-run-transform"
+        duration="54" />
+    <task
+        name="verifier"
+        duration="3" />
+
+    <artifact
+        location="C:\Users\Jonas\WineBar\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="C:\Users\Jonas\WineBar\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
+
+    <build
+        timestamp="1041791947594762"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\Users\Jonas\WineBar\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="1046239400656794"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Jonas\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="1046368770045423"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Jonas\WineBar\app\build\intermediates\builds\debug\1046368770045423\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="1046794711739377"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Jonas\WineBar\app\build\intermediates\builds\debug\1046794711739377\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="1046850241180605"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Jonas\WineBar\app\build\intermediates\builds\debug\1046850241180605\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="1047070774118060"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Jonas\WineBar\app\build\intermediates\builds\debug\1047070774118060\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="1047152235861954"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Jonas\WineBar\app\build\intermediates\builds\debug\1047152235861954\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="1048056246158911"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Jonas\WineBar\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="C:\Users\Jonas\WineBar\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+
+</instant-run>

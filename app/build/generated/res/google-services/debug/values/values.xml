@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">790278507813-48vv2rsb0atsiohh2l23n98cucojd8l1.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://winebar-fdd1b.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">790278507813</string>
+    <string name="google_api_key" translatable="false">AIzaSyD8Ubh3uc8W7zbxcIzJS5fDudoAPyuF7fM</string>
+    <string name="google_app_id" translatable="false">1:790278507813:android:262c9fad1771096c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD8Ubh3uc8W7zbxcIzJS5fDudoAPyuF7fM</string>
+    <string name="google_storage_bucket" translatable="false">winebar-fdd1b.appspot.com</string>
+</resources>

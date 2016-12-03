@@ -42,11 +42,11 @@ public class PurchaseWines extends Activity {
                 EditText claretQuantity = (EditText) findViewById(R.id.claretQuantity);
                 EditText beaujolaisQuantity = (EditText) findViewById(R.id.beaujolaisQuantity);
 
-                System.out.println("Merlot " + merlotQuantity.getText().toString());
-                System.out.println("Cava " + cavaQuantity.getText().toString());
+     //           System.out.println("Merlot " + merlotQuantity.getText().toString());
+     //           System.out.println("Cava " + cavaQuantity.getText().toString());
 
-/*
-                Intent intent = new Intent(getApplicationContext(), Card.class);
+
+                Intent intent = new Intent(PurchaseWines.this, Cart.class);
 
                   intent.putExtra("Cava", cavaQuantity.getText().toString());
                   intent.putExtra("Riesling",  rieslingQuantity.getText().toString());
@@ -59,10 +59,11 @@ public class PurchaseWines extends Activity {
                 intent.putExtra("Claret",  claretQuantity.getText().toString());
 
 
-                System.out.println(intent.getStringExtra("Cava"));
 
-                // startActivity(intent);
-*/
+//                System.out.println(intent.getStringExtra("Cava"));
+
+                startActivity(intent);
+
             }
         });
 

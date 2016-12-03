@@ -1,0 +1,7 @@
+#Fri Dec 02 21:03:27 EST 2016
+base.0=C\:\\Users\\Jonas\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_3cd74eede6016cafb52071dce4f416ce9e8ae204
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\Jonas\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_878693d298b747dd713167b4fdc3a845480e9f69\\classes.dex
+base.1=C\:\\Users\\Jonas\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_878693d298b747dd713167b4fdc3a845480e9f69
+file.0=C\:\\Users\\Jonas\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_3cd74eede6016cafb52071dce4f416ce9e8ae204\\classes.dex
