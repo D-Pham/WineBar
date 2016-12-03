@@ -68,18 +68,17 @@ public class adapterWines extends BaseAdapter {
                     .findViewById(R.id.name);
             holder.description = (TextView) convertView.findViewById(R.id.description);
 
-
-            wines row_pos = rowItems.get(position);
-            int id = context.getResources().getIdentifier(row_pos.getPic(), "drawable", context.getPackageName());
-            System.out.println(id);
-            holder.pic.setImageResource(id);
-            holder.name.setText(row_pos.getName());
-            holder.description.setText(row_pos.getDescription());
-
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
+   
+        wines row_pos = rowItems.get(position);
+        int id = context.getResources().getIdentifier(row_pos.getPic(), "drawable", context.getPackageName());
+        System.out.println(id);
+        holder.pic.setImageResource(id);
+        holder.name.setText(row_pos.getName());
+        holder.description.setText(row_pos.getDescription());
 
         return convertView;
     }
