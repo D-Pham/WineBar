@@ -43,7 +43,10 @@ public class Checkout extends Activity {
                     Toast.makeText(getApplicationContext(), "Please enter a card expiration month!", Toast.LENGTH_SHORT).show();
                 } else if (expYear.getSelectedItem().toString().equals("Select Year")) {
                     Toast.makeText(getApplicationContext(), "Please enter a card expiration year!", Toast.LENGTH_SHORT).show();
-                } else {
+                } else if(cardNum.length() != 16){
+                    Toast.makeText(getApplicationContext(), "Please enter a valid credit card number!", Toast.LENGTH_SHORT).show();
+                }
+                else {
                     Intent newOrderIntent = new Intent(Checkout.this, Confirmation.class);
                     newOrderIntent.putExtra("fourDigits", cardNum.getText().toString().substring(12,16));
                     newOrderIntent.putExtra("streetAddr", getIntent().getStringExtra("streetAddr"));

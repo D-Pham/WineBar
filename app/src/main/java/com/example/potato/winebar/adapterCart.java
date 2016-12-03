@@ -84,7 +84,7 @@ public class adapterCart extends BaseAdapter {
         // String newstring = new SimpleDateFormat("yyyy-MM-dd").format((new Date(row_pos.date)));
         Integer price = 20 * Integer.parseInt(row_pos.quantity);
 
-        holder.totalPrice.setText("Price: " + price.toString());
+        holder.totalPrice.setText("Price: $" + price.toString());
 
 
         return convertView;

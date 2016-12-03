@@ -8,486 +8,491 @@
     android:layout_marginRight="5dp"
     android:weightSum="1">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:clipToPadding="false"
-        android:layout_weight="1.15"
-        android:layout_height="535dp">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clipToPadding="false"
+    android:layout_weight="1.15"
+    android:layout_height="535dp">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:orientation="vertical" android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
-            <TextView
-                android:text="Purchase Wine!"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:textColorLink="?android:attr/textColorLink"
-                android:textColor="@color/colorAccent"
-                android:textSize="45dp" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="75dp" >
-
-                <ImageView
-                    android:layout_width="73dp"
-                    android:layout_height="75dp"
-                    android:src="@drawable/merlot2"
-                    android:id="@+id/merlot" />
-
-                <TextView
-                    android:layout_gravity="center"
-                    android:text="Merlot"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/merlotText"
-                    android:layout_alignBaseline="@+id/merlot"
-                    android:layout_toRightOf="@+id/merlot"
-                    android:textAlignment="center"
-                    android:textSize="25dp" />
-
-                <TextView
-                    android:layout_gravity="center"
-                    android:text="Quantity: "
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/Quantity"
-                    android:textSize="25dp"
-                    android:layout_alignBaseline="@+id/merlot"
-                    android:layout_toRightOf="@+id/merlotText" />
-
-
-                <EditText
-                    android:layout_gravity="center"
-                    android:text="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:ems="10"
-                    android:id="@+id/merlotQuantity"
-                    android:layout_alignBaseline="@+id/Quantity"
-                    android:layout_toRightOf="@+id/Quantity"/>
-
-                   </TableRow>
-            <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:id="@+id/textView12"
-                android:layout_marginTop="10dp"
-                android:background="@color/common_google_signin_btn_text_dark_focused"
-                android:layout_height="1px" />
-
-            <TableRow
+        <TextView
+            android:text="Purchase Wine!"
             android:layout_width="match_parent"
-            android:layout_height="79dp" >
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColorLink="?android:attr/textColorLink"
+            android:textColor="@color/colorAccent"
+            android:textSize="45dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="75dp" >
+
             <ImageView
                 android:layout_width="73dp"
-                android:layout_height="81dp"
-                android:src="@drawable/cava2"
-                android:id="@+id/cava" />
+                android:layout_height="75dp"
+                android:src="@drawable/merlot2"
+                android:id="@+id/merlot" />
 
             <TextView
                 android:layout_gravity="center"
-
-                android:text="Cava"
+                android:text="Merlot                 $25"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/cavaText"
-                android:layout_alignBaseline="@+id/cava"
-                android:layout_toRightOf="@+id/cava"
+                android:id="@+id/merlotText"
+                android:layout_alignBaseline="@+id/merlot"
+                android:layout_toRightOf="@+id/merlot"
                 android:textAlignment="center"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:layout_gravity="center"
-
                 android:text="Quantity: "
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
-                android:layout_alignBaseline="@+id/cava"
-                android:layout_toRightOf="@+id/cavaText" />
+                android:id="@+id/Quantity"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/merlot"
+                android:layout_toRightOf="@+id/merlotText" />
 
 
             <EditText
-                android:layout_gravity="center"
 
+                android:layout_gravity="center"
                 android:text="0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:ems="10"
-                android:id="@+id/cavaQuantity"
+                android:id="@+id/merlotQuantity"
+                android:layout_alignBaseline="@+id/Quantity"
+                android:layout_toRightOf="@+id/Quantity"
+                android:textAlignment="center" />
+
+               </TableRow>
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:id="@+id/textView12"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_height="1px" />
+
+        <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="79dp" >
+        <ImageView
+            android:layout_width="73dp"
+            android:layout_height="81dp"
+            android:src="@drawable/cava2"
+            android:id="@+id/cava" />
+
+        <TextView
+            android:layout_gravity="center"
+
+            android:text="Cava                 $20"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cavaText"
+            android:layout_alignBaseline="@+id/cava"
+            android:layout_toRightOf="@+id/cava"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_gravity="center"
+
+            android:text="Quantity: "
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_alignBaseline="@+id/cava"
+            android:layout_toRightOf="@+id/cavaText" />
+
+
+        <EditText
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/cavaQuantity"
+            android:layout_alignBaseline="@+id/Quantity"
+            android:layout_toRightOf="@+id/Quantity"/>
+
+    </TableRow>
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_height="1px" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="87dp" >
+            <ImageView
+                android:layout_width="73dp"
+                android:layout_height="81dp"
+                android:src="@drawable/barbaresco2"
+                android:id="@+id/barbaresco" />
+
+            <TextView
+                android:layout_gravity="center"
+
+                android:text="Barbaresco             $23"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/barbarescoText"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/barbaresco"
+                android:layout_toRightOf="@+id/barbaresco"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_gravity="center"
+
+                android:text="Quantity: "
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/barbaresco"
+                android:layout_toRightOf="@+id/barbarescoText" />
+
+
+            <EditText
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/barbarescoQuantity"
                 android:layout_alignBaseline="@+id/Quantity"
                 android:layout_toRightOf="@+id/Quantity"/>
 
         </TableRow>
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_height="1px" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="87dp" >
+            <ImageView
+                android:layout_width="73dp"
+                android:layout_height="81dp"
+                android:src="@drawable/mourvedre2"
+                android:id="@+id/mourvedre" />
+
             <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_marginTop="10dp"
-                android:background="@color/common_google_signin_btn_text_dark_focused"
-                android:layout_height="1px" />
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="87dp" >
-                <ImageView
-                    android:layout_width="73dp"
-                    android:layout_height="81dp"
-                    android:src="@drawable/barbaresco2"
-                    android:id="@+id/barbaresco" />
+                android:layout_gravity="center"
 
-                <TextView
-                    android:layout_gravity="center"
+                android:text="Mourvedre             $25"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mourvedreText"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/mourvedre"
+                android:layout_toRightOf="@+id/mourvedre"
+                android:textAlignment="center" />
 
-                    android:text="Barbaresco"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/barbarescoText"
-                    android:textSize="25dp"
-                    android:layout_alignBaseline="@+id/barbaresco"
-                    android:layout_toRightOf="@+id/barbaresco"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:layout_gravity="center"
-
-                    android:text="Quantity: "
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="25dp"
-                    android:layout_alignBaseline="@+id/barbaresco"
-                    android:layout_toRightOf="@+id/barbarescoText" />
-
-
-                <EditText
-                    android:layout_gravity="center"
-
-                    android:text="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:ems="10"
-                    android:id="@+id/barbarescoQuantity"
-                    android:layout_alignBaseline="@+id/Quantity"
-                    android:layout_toRightOf="@+id/Quantity"/>
-
-            </TableRow>
             <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_marginTop="10dp"
-                android:background="@color/common_google_signin_btn_text_dark_focused"
-                android:layout_height="1px" />
+                android:layout_gravity="center"
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="87dp" >
-                <ImageView
-                    android:layout_width="73dp"
-                    android:layout_height="81dp"
-                    android:src="@drawable/mourvedre2"
-                    android:id="@+id/mourvedre" />
-
-                <TextView
-                    android:layout_gravity="center"
-
-                    android:text="Mourvedre"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/mourvedreText"
-                    android:textSize="25dp"
-                    android:layout_alignBaseline="@+id/mourvedre"
-                    android:layout_toRightOf="@+id/mourvedre"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:layout_gravity="center"
-
-                    android:text="Quantity: "
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="25dp"
-                    android:layout_alignBaseline="@+id/mourvedre"
-                    android:layout_toRightOf="@+id/mourvedreText" />
+                android:text="Quantity: "
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/mourvedre"
+                android:layout_toRightOf="@+id/mourvedreText" />
 
 
-                <EditText
-                    android:layout_gravity="center"
+            <EditText
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/mourvedreQuantity"
+                android:layout_alignBaseline="@+id/Quantity"
+                android:layout_toRightOf="@+id/Quantity"/>
 
-                    android:text="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:ems="10"
-                    android:id="@+id/mourvedreQuantity"
-                    android:layout_alignBaseline="@+id/Quantity"
-                    android:layout_toRightOf="@+id/Quantity"/>
+        </TableRow>
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_height="1px" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="85dp" >
+            <ImageView
+                android:layout_width="73dp"
+                android:layout_height="81dp"
+                android:src="@drawable/riesling2"
+                android:id="@+id/riesling" />
 
-            </TableRow>
             <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_marginTop="10dp"
-                android:background="@color/common_google_signin_btn_text_dark_focused"
-                android:layout_height="1px" />
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="85dp" >
-                <ImageView
-                    android:layout_width="73dp"
-                    android:layout_height="81dp"
-                    android:src="@drawable/riesling2"
-                    android:id="@+id/riesling" />
+                android:layout_gravity="center"
 
-                <TextView
-                    android:layout_gravity="center"
+                android:text="Riesling             $25"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/rieslingText"
+                android:layout_alignBaseline="@+id/riesling"
+                android:layout_toRightOf="@+id/riesling"
+                android:textAlignment="center"
+                android:textSize="20dp" />
 
-                    android:text="Riesling"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/rieslingText"
-                    android:layout_alignBaseline="@+id/riesling"
-                    android:layout_toRightOf="@+id/riesling"
-                    android:textAlignment="center"
-                    android:textSize="25dp" />
-
-                <TextView
-                    android:layout_gravity="center"
-
-                    android:text="Quantity: "
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="25dp"
-                    android:layout_alignBaseline="@+id/riesling"
-                    android:layout_toRightOf="@+id/rieslingText" />
-
-
-                <EditText
-                    android:layout_gravity="center"
-
-                    android:text="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:ems="10"
-                    android:id="@+id/rieslingQuantity"
-                    android:layout_alignBaseline="@+id/Quantity"
-                    android:layout_toRightOf="@+id/Quantity"/>
-
-            </TableRow>
             <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_marginTop="10dp"
-                android:background="@color/common_google_signin_btn_text_dark_focused"
-                android:layout_height="1px" />
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="87dp" >
-                <ImageView
-                    android:layout_width="73dp"
-                    android:layout_height="81dp"
-                    android:src="@drawable/chardonnay2"
-                    android:id="@+id/chardonnay" />
+                android:layout_gravity="center"
 
-                <TextView
-                    android:layout_gravity="center"
-
-                    android:text="Chardonnay"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/chardonnayText"
-                    android:textSize="25dp"
-                    android:layout_alignBaseline="@+id/chardonnay"
-                    android:layout_toRightOf="@+id/chardonnay"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:layout_gravity="center"
-
-                    android:text="Quantity: "
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="25dp"
-                    android:layout_alignBaseline="@+id/chardonnay"
-                    android:layout_toRightOf="@+id/chardonnayText" />
+                android:text="Quantity: "
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/riesling"
+                android:layout_toRightOf="@+id/rieslingText" />
 
 
-                <EditText
-                    android:layout_gravity="center"
+            <EditText
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/rieslingQuantity"
+                android:layout_alignBaseline="@+id/Quantity"
+                android:layout_toRightOf="@+id/Quantity"/>
 
-                    android:text="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:ems="10"
-                    android:id="@+id/chardonnayQuantity"
-                    android:layout_alignBaseline="@+id/Quantity"
-                    android:layout_toRightOf="@+id/Quantity"/>
+        </TableRow>
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_height="1px" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="87dp" >
+            <ImageView
+                android:layout_width="73dp"
+                android:layout_height="81dp"
+                android:src="@drawable/chardonnay2"
+                android:id="@+id/chardonnay" />
 
-            </TableRow>
             <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_marginTop="10dp"
-                android:background="@color/common_google_signin_btn_text_dark_focused"
-                android:layout_height="1px" />
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="87dp" >
-                <ImageView
-                    android:layout_width="73dp"
-                    android:layout_height="81dp"
-                    android:src="@drawable/gewurztraminer2"
-                    android:id="@+id/gewurztraminer" />
+                android:layout_gravity="center"
 
-                <TextView
-                    android:layout_gravity="center"
+                android:text="Chardonnay             $25"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/chardonnayText"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/chardonnay"
+                android:layout_toRightOf="@+id/chardonnay"
+                android:textAlignment="center" />
 
-                    android:text="Gewurztraminer"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/gewurztraminerText"
-                    android:layout_alignBaseline="@+id/gewurztraminer"
-                    android:layout_toRightOf="@+id/gewurztraminer"
-                    android:textAlignment="center"
-                    android:textSize="25dp" />
-
-                <TextView
-                    android:layout_gravity="center"
-
-                    android:text="Quantity: "
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="25dp"
-                    android:layout_alignBaseline="@+id/gewurztraminer"
-                    android:layout_toRightOf="@+id/gewurztraminerText" />
-
-
-                <EditText
-                    android:layout_gravity="center"
-
-                    android:text="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:ems="10"
-                    android:id="@+id/gewurztraminerQuantity"
-                    android:layout_alignBaseline="@+id/Quantity"
-                    android:layout_toRightOf="@+id/Quantity"/>
-
-            </TableRow>
             <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_marginTop="10dp"
-                android:background="@color/common_google_signin_btn_text_dark_focused"
-                android:layout_height="1px" />
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="87dp" >
-                <ImageView
-                    android:layout_width="73dp"
-                    android:layout_height="81dp"
-                    android:src="@drawable/beaujolais2"
-                    android:id="@+id/beaujolais" />
+                android:layout_gravity="center"
 
-                <TextView
-                    android:layout_gravity="center"
-
-                    android:text="Beaujolais"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/beaujolaisText"
-                    android:textSize="25dp"
-                    android:layout_alignBaseline="@+id/beaujolais"
-                    android:layout_toRightOf="@+id/beaujolais"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:layout_gravity="center"
-
-                    android:text="Quantity: "
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="25dp"
-                    android:layout_alignBaseline="@+id/beaujolais"
-                    android:layout_toRightOf="@+id/beaujolaisText" />
+                android:text="Quantity: "
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/chardonnay"
+                android:layout_toRightOf="@+id/chardonnayText" />
 
 
-                <EditText
-                    android:layout_gravity="center"
+            <EditText
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/chardonnayQuantity"
+                android:layout_alignBaseline="@+id/Quantity"
+                android:layout_toRightOf="@+id/Quantity"/>
 
-                    android:text="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:ems="10"
-                    android:id="@+id/beaujolaisQuantity"
-                    android:layout_alignBaseline="@+id/Quantity"
-                    android:layout_toRightOf="@+id/Quantity"/>
+        </TableRow>
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_height="1px" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="87dp" >
+            <ImageView
+                android:layout_width="73dp"
+                android:layout_height="81dp"
+                android:src="@drawable/gewurztraminer2"
+                android:id="@+id/gewurztraminer" />
 
-            </TableRow>
             <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_marginTop="10dp"
-                android:background="@color/common_google_signin_btn_text_dark_focused"
-                android:layout_height="1px" />
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="87dp" >
-                <ImageView
-                    android:layout_width="73dp"
-                    android:layout_height="81dp"
-                    android:src="@drawable/claret2"
-                    android:id="@+id/claret" />
+                android:layout_gravity="center"
 
-                <TextView
-                    android:layout_gravity="center"
+                android:text="Gewurztraminer              $25"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/gewurztraminerText"
+                android:layout_alignBaseline="@+id/gewurztraminer"
+                android:layout_toRightOf="@+id/gewurztraminer"
+                android:textAlignment="center"
+                android:textSize="20dp" />
 
-                    android:text="Claret"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/claretText"
-                    android:textSize="25dp"
-                    android:layout_alignBaseline="@+id/claret"
-                    android:layout_toRightOf="@+id/claret"
-                    android:textAlignment="center" />
+            <TextView
+                android:layout_gravity="center"
 
-                <TextView
-                    android:layout_gravity="center"
-
-                    android:text="Quantity: "
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="25dp"
-                    android:layout_alignBaseline="@+id/claret"
-                    android:layout_toRightOf="@+id/claretText" />
+                android:text="Quantity: "
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/gewurztraminer"
+                android:layout_toRightOf="@+id/gewurztraminerText" />
 
 
-                <EditText
-                    android:layout_gravity="center"
+            <EditText
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/gewurztraminerQuantity"
+                android:layout_alignBaseline="@+id/Quantity"
+                android:layout_toRightOf="@+id/Quantity"/>
 
-                    android:text="0"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:ems="10"
-                    android:id="@+id/claretQuantity"
-                    android:layout_alignBaseline="@+id/Quantity"
-                    android:layout_toRightOf="@+id/Quantity"/>
+        </TableRow>
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_height="1px" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="87dp" >
+            <ImageView
+                android:layout_width="73dp"
+                android:layout_height="81dp"
+                android:src="@drawable/beaujolais2"
+                android:id="@+id/beaujolais" />
 
-            </TableRow>
-        </LinearLayout>
+            <TextView
+                android:layout_gravity="center"
 
-    </ScrollView>
+                android:text="Beaujolais              $25"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/beaujolaisText"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/beaujolais"
+                android:layout_toRightOf="@+id/beaujolais"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_gravity="center"
+
+                android:text="Quantity: "
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/beaujolais"
+                android:layout_toRightOf="@+id/beaujolaisText" />
+
+
+            <EditText
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/beaujolaisQuantity"
+                android:layout_alignBaseline="@+id/Quantity"
+                android:layout_toRightOf="@+id/Quantity"/>
+
+        </TableRow>
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_google_signin_btn_text_dark_focused"
+            android:layout_height="1px" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="87dp" >
+            <ImageView
+                android:layout_width="73dp"
+                android:layout_height="81dp"
+                android:src="@drawable/claret2"
+                android:id="@+id/claret" />
+
+            <TextView
+                android:layout_gravity="center"
+
+                android:text="Claret              $32"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/claretText"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/claret"
+                android:layout_toRightOf="@+id/claret"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_gravity="center"
+
+                android:text="Quantity: "
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/claret"
+                android:layout_toRightOf="@+id/claretText" />
+
+
+            <EditText
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/claretQuantity"
+                android:layout_alignBaseline="@+id/Quantity"
+                android:layout_toRightOf="@+id/Quantity"/>
+
+        </TableRow>
+    </LinearLayout>
+
+</ScrollView>
+
 
 
     <TableRow

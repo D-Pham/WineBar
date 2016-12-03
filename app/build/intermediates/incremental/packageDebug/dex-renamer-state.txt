@@ -1,7 +1,7 @@
-#Fri Dec 02 23:34:28 EST 2016
-base.0=C\:\\Users\\Ankush_2\\Documents\\GitHub\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_5d6ce21cb64e7c9db98e60045a2f3f0dfbe501a8
+#Sat Dec 03 09:22:22 EST 2016
+base.0=C\:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_e30d6841100bfc4df0670661347fb850cdb4a849
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=C\:\\Users\\Ankush_2\\Documents\\GitHub\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_2014fd780010a778f4d173ca7dced50c690abf37\\classes.dex
-base.1=C\:\\Users\\Ankush_2\\Documents\\GitHub\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_2014fd780010a778f4d173ca7dced50c690abf37
-file.0=C\:\\Users\\Ankush_2\\Documents\\GitHub\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_5d6ce21cb64e7c9db98e60045a2f3f0dfbe501a8\\classes.dex
+file.1=C\:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_960b36a7b16a0f558d909adad0d54baf728107bb\\classes.dex
+base.1=C\:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_960b36a7b16a0f558d909adad0d54baf728107bb
+file.0=C\:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_e30d6841100bfc4df0670661347fb850cdb4a849\\classes.dex

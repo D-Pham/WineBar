@@ -37,7 +37,7 @@ public class Confirmation extends Activity {
 
         placeOrder = (Button) findViewById(R.id.place_order_button);
         customerPaid = (TextView) findViewById(R.id.cardLastDigits);
-        customerPaid.setText(getIntent().getStringExtra("fourDigits"));
+        customerPaid.setText("XXXX-XXXX-XXXX-" + getIntent().getStringExtra("fourDigits"));
 
         customerStreetAddr = (TextView) findViewById(R.id.customerStreetAddr);
         customerCity = (TextView) findViewById(R.id.customerCity);
@@ -52,9 +52,13 @@ public class Confirmation extends Activity {
         customerState.setText(getIntent().getStringExtra("state"));
 
 
-
+        cartObject c;
         for (String s: getIntent().getStringArrayListExtra("listOfWines")) {
-            cartObject c = new cartObject(s.toLowerCase()+"2", s, Integer.toString(3), Integer.toString(60));
+            if(s.equals("Gewürztraminer")) {
+                c = new cartObject("gewurztraminer2", s, Integer.toString(3), Integer.toString(60));
+            }else{
+                c = new cartObject(s.toLowerCase()+"2", s, Integer.toString(3), Integer.toString(60));
+            }
             tempList.add(c);
         }
 

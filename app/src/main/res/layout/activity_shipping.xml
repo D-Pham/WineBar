@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.jatin.orderandcheckout.Shipping">
+    tools:context="com.example.jatin.orderandcheckout.">
 
     <TextView
         android:text="Shipping"
@@ -33,6 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/streetAddrEditTxt"
         android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
         android:id="@+id/textView10" />
 
     <EditText
@@ -46,6 +47,8 @@
 
     <TextView
         android:text="State"
+        android:layout_marginTop="20dp"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/cityEditTxt"
@@ -54,6 +57,8 @@
 
     <TextView
         android:text="Zip Code"
+        android:layout_marginTop="20dp"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/stateSpinner"
@@ -81,6 +86,8 @@
 
     <TextView
         android:text="Phone Number (We'll use this to contact you if we need to!)"
+        android:layout_marginTop="20dp"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView14"
@@ -102,7 +109,7 @@
         android:text="Continue to Checkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
+        android:layout_marginBottom="30dp"
         android:id="@+id/continueCheckoutButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
