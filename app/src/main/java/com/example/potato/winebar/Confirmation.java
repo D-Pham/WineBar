@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Confirmation extends Activity {
@@ -21,10 +22,17 @@ public class Confirmation extends Activity {
     TextView customerPaid;
     Button placeOrder;
     Random r;
+
+    ArrayList<cartObject> tempList = new ArrayList<cartObject>();
+    adapterCart orderLA;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_confirmation);
+
+
 
 
         placeOrder = (Button) findViewById(R.id.place_order_button);
@@ -37,10 +45,26 @@ public class Confirmation extends Activity {
         customerState = (TextView) findViewById(R.id.customerState);
 
 
+
         customerStreetAddr.setText(getIntent().getStringExtra("streetAddr"));
         customerCity.setText(getIntent().getStringExtra("city"));
         customerZip.setText(getIntent().getStringExtra("zip"));
         customerState.setText(getIntent().getStringExtra("state"));
+
+
+
+        for (String s: getIntent().getStringArrayListExtra("listOfWines")) {
+            cartObject c = new cartObject(s.toLowerCase()+"2", s, Integer.toString(3), Integer.toString(60));
+            tempList.add(c);
+        }
+
+        customerBought = (ListView) findViewById(R.id.listView);
+
+        System.out.println(tempList);
+
+        orderLA = new adapterCart(this, tempList);
+        customerBought.setAdapter(orderLA);
+
 
         placeOrder.setOnClickListener(new View.OnClickListener() {
             @Override

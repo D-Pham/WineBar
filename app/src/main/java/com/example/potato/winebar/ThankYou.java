@@ -13,6 +13,7 @@ public class ThankYou extends Activity {
 
     TextView orderNumTV;
     ListView orderLV;
+    ArrayList<cartObject> tempList = new ArrayList<cartObject>();
     adapterCart orderLA;
 
     @Override
@@ -20,15 +21,17 @@ public class ThankYou extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thank_you);
 
-        ArrayList<cartObject> tempList = new ArrayList<cartObject>();
 
         for (String s: getIntent().getStringArrayListExtra("listOfWines")) {
-            cartObject c = new cartObject(null, s, Integer.toString(3), Integer.toString(60));
+            cartObject c = new cartObject(s.toLowerCase()+"2", s, Integer.toString(3), Integer.toString(60));
             tempList.add(c);
         }
 
         orderNumTV = (TextView) findViewById(R.id.orderNumTextView);
         orderLV = (ListView) findViewById(R.id.orderListOfWines);
+
+
+System.out.println(tempList);
 
         orderLA = new adapterCart(this, tempList);
         orderNumTV.setText(""+getIntent().getIntExtra("orderNum", 1));

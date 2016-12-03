@@ -21,7 +21,7 @@ public class Cart extends Activity {
 
 
     Button submit;
-    ListView listOfWines;
+    public ListView listOfWines;
     List<cartObject> stringListOfWinesAndQuantities;
     ArrayList<String> actualStrList;
     adapterCart listOfWinesAdapter;
@@ -80,6 +80,13 @@ public class Cart extends Activity {
         listOfWinesAdapter = new adapterCart(this, stringListOfWinesAndQuantities);
         listOfWines.setAdapter(listOfWinesAdapter);
 
+        /*setContentView(R.layout.activity_confirmation);
+        ListView customerBought = (ListView)   findViewById(R.id.listView);
+        customerBought.setAdapter(listOfWinesAdapter);
+        setContentView(R.layout.activity_cart);*/
+
+
+
         // winesAndQuantities.put("Merlot", 3);
 //        listOfWinesAdapter.add(stringListOfWinesAndQuantities);
  //       listOfWines.setAdapter(listOfWinesAdapter);
@@ -115,7 +122,12 @@ public class Cart extends Activity {
 
     public void deleteWine(String s) {
         if (winesAndQuantities.containsKey(s)) {
-                winesAndQuantities.remove(s);
+            winesAndQuantities.remove(s);
         }
+    }
+
+
+    public ListView getListOfWines() {
+      return this.listOfWines;
     }
 }
