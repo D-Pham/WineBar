@@ -17,7 +17,9 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
 
         <TextView
             android:text="Purchase Wine!"
@@ -49,20 +51,21 @@
                 android:layout_alignBaseline="@+id/merlot"
                 android:layout_toRightOf="@+id/merlot"
                 android:textAlignment="center"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:layout_gravity="center"
                 android:text="Quantity: "
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/Quantity"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_alignBaseline="@+id/merlot"
                 android:layout_toRightOf="@+id/merlotText" />
 
 
             <EditText
+
                 android:layout_gravity="center"
                 android:text="0"
                 android:layout_width="wrap_content"
@@ -71,7 +74,8 @@
                 android:ems="10"
                 android:id="@+id/merlotQuantity"
                 android:layout_alignBaseline="@+id/Quantity"
-                android:layout_toRightOf="@+id/Quantity"/>
+                android:layout_toRightOf="@+id/Quantity"
+                android:textAlignment="center" />
 
                </TableRow>
         <TextView
@@ -101,22 +105,22 @@
             android:layout_alignBaseline="@+id/cava"
             android:layout_toRightOf="@+id/cava"
             android:textAlignment="center"
-            android:textSize="25dp" />
+            android:textSize="20dp" />
 
         <TextView
             android:layout_gravity="center"
 
             android:text="Quantity: "
-            android:layout_width="100dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:layout_alignBaseline="@+id/cava"
             android:layout_toRightOf="@+id/cavaText" />
 
 
         <EditText
             android:layout_gravity="center"
-
+            android:textAlignment="center"
             android:text="0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -149,7 +153,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/barbarescoText"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_alignBaseline="@+id/barbaresco"
                 android:layout_toRightOf="@+id/barbaresco"
                 android:textAlignment="center" />
@@ -158,16 +162,16 @@
                 android:layout_gravity="center"
 
                 android:text="Quantity: "
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_alignBaseline="@+id/barbaresco"
                 android:layout_toRightOf="@+id/barbarescoText" />
 
 
             <EditText
                 android:layout_gravity="center"
-
+                android:textAlignment="center"
                 android:text="0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -201,7 +205,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/mourvedreText"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_alignBaseline="@+id/mourvedre"
                 android:layout_toRightOf="@+id/mourvedre"
                 android:textAlignment="center" />
@@ -210,16 +214,16 @@
                 android:layout_gravity="center"
 
                 android:text="Quantity: "
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_alignBaseline="@+id/mourvedre"
                 android:layout_toRightOf="@+id/mourvedreText" />
 
 
             <EditText
                 android:layout_gravity="center"
-
+                android:textAlignment="center"
                 android:text="0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -255,22 +259,22 @@
                 android:layout_alignBaseline="@+id/riesling"
                 android:layout_toRightOf="@+id/riesling"
                 android:textAlignment="center"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:layout_gravity="center"
 
                 android:text="Quantity: "
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_alignBaseline="@+id/riesling"
                 android:layout_toRightOf="@+id/rieslingText" />
 
 
             <EditText
                 android:layout_gravity="center"
-
+                android:textAlignment="center"
                 android:text="0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -303,7 +307,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/chardonnayText"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_alignBaseline="@+id/chardonnay"
                 android:layout_toRightOf="@+id/chardonnay"
                 android:textAlignment="center" />
@@ -312,16 +316,16 @@
                 android:layout_gravity="center"
 
                 android:text="Quantity: "
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_alignBaseline="@+id/chardonnay"
                 android:layout_toRightOf="@+id/chardonnayText" />
 
 
             <EditText
                 android:layout_gravity="center"
-
+                android:textAlignment="center"
                 android:text="0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -357,22 +361,22 @@
                 android:layout_alignBaseline="@+id/gewurztraminer"
                 android:layout_toRightOf="@+id/gewurztraminer"
                 android:textAlignment="center"
-                android:textSize="25dp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:layout_gravity="center"
 
                 android:text="Quantity: "
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_alignBaseline="@+id/gewurztraminer"
                 android:layout_toRightOf="@+id/gewurztraminerText" />
 
 
             <EditText
                 android:layout_gravity="center"
-
+                android:textAlignment="center"
                 android:text="0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -405,7 +409,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/beaujolaisText"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_alignBaseline="@+id/beaujolais"
                 android:layout_toRightOf="@+id/beaujolais"
                 android:textAlignment="center" />
@@ -414,16 +418,16 @@
                 android:layout_gravity="center"
 
                 android:text="Quantity: "
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_alignBaseline="@+id/beaujolais"
                 android:layout_toRightOf="@+id/beaujolaisText" />
 
 
             <EditText
                 android:layout_gravity="center"
-
+                android:textAlignment="center"
                 android:text="0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -456,7 +460,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/claretText"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_alignBaseline="@+id/claret"
                 android:layout_toRightOf="@+id/claret"
                 android:textAlignment="center" />
@@ -465,16 +469,16 @@
                 android:layout_gravity="center"
 
                 android:text="Quantity: "
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:layout_alignBaseline="@+id/claret"
                 android:layout_toRightOf="@+id/claretText" />
 
 
             <EditText
                 android:layout_gravity="center"
-
+                android:textAlignment="center"
                 android:text="0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
