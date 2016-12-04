@@ -65,7 +65,7 @@ MERGED from [com.google.firebase:firebase-iid:9.4.0] C:\Users\Julien\Desktop\Win
 	android:allowBackup
 		ADDED from C:\Users\Julien\Desktop\WineBar\app\src\main\AndroidManifest.xml:12:9-35
 	android:icon
-		ADDED from C:\Users\Julien\Desktop\WineBar\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from C:\Users\Julien\Desktop\WineBar\app\src\main\AndroidManifest.xml:13:9-42
 	android:theme
 		ADDED from C:\Users\Julien\Desktop\WineBar\app\src\main\AndroidManifest.xml:16:9-40
 activity#com.example.potato.winebar.LoginActivity

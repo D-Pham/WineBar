@@ -2857,13 +2857,14 @@ containing a value of this type.
         public static final int mourvedre=0x7f02008d;
         public static final int mourvedre2=0x7f02008e;
         public static final int navigation_empty_icon=0x7f02008f;
-        public static final int notification_template_icon_bg=0x7f020096;
+        public static final int notification_template_icon_bg=0x7f020097;
         public static final int r=0x7f020090;
         public static final int riesling=0x7f020091;
         public static final int riesling2=0x7f020092;
         public static final int table=0x7f020093;
         public static final int wine=0x7f020094;
         public static final int winebar=0x7f020095;
+        public static final int wineicon=0x7f020096;
     }
     public static final class id {
         public static final int Notes=0x7f0d00f2;

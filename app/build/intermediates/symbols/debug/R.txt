@@ -732,13 +732,14 @@ int drawable merlot2 0x7f02008c
 int drawable mourvedre 0x7f02008d
 int drawable mourvedre2 0x7f02008e
 int drawable navigation_empty_icon 0x7f02008f
-int drawable notification_template_icon_bg 0x7f020096
+int drawable notification_template_icon_bg 0x7f020097
 int drawable r 0x7f020090
 int drawable riesling 0x7f020091
 int drawable riesling2 0x7f020092
 int drawable table 0x7f020093
 int drawable wine 0x7f020094
 int drawable winebar 0x7f020095
+int drawable wineicon 0x7f020096
 int id Notes 0x7f0d00f2
 int id Quantity 0x7f0d00a5
 int id Rating 0x7f0d00f1
