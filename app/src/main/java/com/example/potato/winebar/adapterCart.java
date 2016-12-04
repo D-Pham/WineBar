@@ -82,9 +82,10 @@ public class adapterCart extends BaseAdapter {
         holder.name.setText(row_pos.wineName);
         holder.quantity.setText("Quantity: " + row_pos.quantity);
         // String newstring = new SimpleDateFormat("yyyy-MM-dd").format((new Date(row_pos.date)));
-        Integer price = 20 * Integer.parseInt(row_pos.quantity);
 
-        holder.totalPrice.setText("Price: $" + price.toString());
+       // Integer price = Integer.parseInt(row_pos.totalPrice);
+
+        holder.totalPrice.setText("Price: $" + row_pos.totalPrice);
 
 
         return convertView;

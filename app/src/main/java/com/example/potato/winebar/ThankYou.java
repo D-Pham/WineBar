@@ -11,6 +11,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class ThankYou extends Activity {
 
@@ -19,14 +20,45 @@ public class ThankYou extends Activity {
     ArrayList<cartObject> tempList = new ArrayList<cartObject>();
     adapterCart orderLA;
     Button main;
+    TextView grandTotalPrice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thank_you);
         main = (Button) findViewById(R.id.button5);
+        grandTotalPrice = (TextView) findViewById(R.id.thankYouTotalPrice);
 
         for (String s: getIntent().getStringArrayListExtra("listOfWines")) {
-            cartObject c = new cartObject(s.toLowerCase()+"2", s, Integer.toString(3), Integer.toString(60));
+
+            cartObject c = null;
+            HashMap<String, Integer> hashMap = (HashMap<String, Integer>) getIntent().getSerializableExtra("hashMap");
+            if(s.equals("Gewürztraminer")) {
+                c = new cartObject("gewurztraminer2", s, Integer.toString(hashMap.get(s)), Integer.toString(25 * hashMap.get(s)));
+            } else if (s.equals("Merlot")) {
+                c = new cartObject("merlot2", s, Integer.toString(hashMap.get(s)), Integer.toString(25 * hashMap.get(s)));
+
+            } else if (s.equals("Cava")) {
+                c = new cartObject("cava2", s, Integer.toString(hashMap.get(s)), Integer.toString(20 * hashMap.get(s)));
+
+            } else if (s.equals("Riesling")) {
+                c = new cartObject("riesling2", s, Integer.toString(hashMap.get(s)), Integer.toString(25 * hashMap.get(s)));
+
+            } else if (s.equals("Mourvedre")) {
+                c = new cartObject("mourvedre2", s, Integer.toString(hashMap.get(s)), Integer.toString(25 * hashMap.get(s)));
+
+            } else if (s.equals("Barbaresco")) {
+                c = new cartObject("barbaresco2", s, Integer.toString(hashMap.get(s)), Integer.toString(23 * hashMap.get(s)));
+
+            } else if (s.equals("Chardonnay")) {
+                c = new cartObject("chardonnay2", s, Integer.toString(hashMap.get(s)), Integer.toString(25 * hashMap.get(s)));
+
+            } else if (s.equals("Beaujolais")) {
+                c = new cartObject("beaujolais2", s, Integer.toString(hashMap.get(s)), Integer.toString(25 * hashMap.get(s)));
+
+            } else if (s.equals("Claret")) {
+                c = new cartObject("claret2", s, Integer.toString(hashMap.get(s)), Integer.toString(32 * hashMap.get(s)));
+            }
+
             tempList.add(c);
         }
 
@@ -47,6 +79,8 @@ public class ThankYou extends Activity {
         orderLA = new adapterCart(this, tempList);
         orderNumTV.setText(""+getIntent().getIntExtra("orderNum", 1));
         orderLV.setAdapter(orderLA);
+
+        grandTotalPrice.setText("Grand Total: $" + Integer.toString(getIntent().getIntExtra("grandTotal", 1)) + ".00");
 
     }
 }

@@ -53,6 +53,8 @@ public class Shipping extends Activity {
                     shippingIntent.putExtra("phoneNumber", phoneNumber.getText().toString());
                     shippingIntent.putExtra("zip", zipCode.getText().toString());
                     shippingIntent.putExtra("state", stateSpinner.getSelectedItem().toString());
+                    shippingIntent.putExtra("hashMap", getIntent().getSerializableExtra("hashMap"));
+                    shippingIntent.putExtra("grandTotal", getIntent().getIntExtra("grandTotal", 1));
                     shippingIntent.putStringArrayListExtra("listOfWines", getIntent().getStringArrayListExtra("listOfWines"));
 
 

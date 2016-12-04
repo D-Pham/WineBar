@@ -3,417 +3,417 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Julien\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\jsr305-2.0.1_199fc295cc564a749b7be821cb20a1a9ff9c2801\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_5b797247e053b29b3ffe41b919bf96c39803dea1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.2\479c1e06db31c432330183f5cae684163f186146\javax.annotation-api-1.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="479c1e06db31c432330183f5cae684163f186146">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\javax.annotation-api-1.2_d1ade3677c334fc82aadfacaa4807ce8d6a5a850\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support.test.espresso\espresso-core\2.2.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d115b0e9e1501135fe91254ba884fcbd83d374c0">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.test.espresso-espresso-core-2.2.2_cf28bd55ac6a3bc991a42e04fe58ce090679dfd3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_60aa60bc107311ef759b91656df1ed772050df43\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\.gradle\caches\modules-2\files-2.1\com.squareup\javawriter\2.1.1\67ff45d9ae02e583d0f9b3432a5ebbe05c30c966\javawriter-2.1.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="67ff45d9ae02e583d0f9b3432a5ebbe05c30c966">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\javawriter-2.1.1_f259333c5dd8a1cc8f81596606b4ddf4a1cf2617\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_0a2564e15f34716ec5a870446d767b41b0f5587e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="6bc41d9d6fd12d2ef23c785a259011001f4a1a5b">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.4.0_29825c33d35647d1934bcbb8136366e87e9d92c0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support.test\rules\0.5\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7e11799d8a26bfa5d48acafe012ee5545b9bf468">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.test-rules-0.5_3240b08ad6b14400b20714f4715c07db4dda2263\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_b87c4edad348fcce3a9f5c07aa756126e6aaf6b8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="42a25dc3219429f0e5d060061f71acb49bf010a0">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\hamcrest-core-1.3_80766bc592e246ecb49cdb087f094ba66a7bd93e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.4.0_951bd98f8eaa13f703ca95b1fa1862c18f0fa547\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support.test\runner\0.5\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="796f9229948e907471c5595fbe94655ccf03ff73">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.test-runner-0.5_2072a1cf0c3b346bba3dbe7c1e0f96773731e9e0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\javax.inject-1_f1d763a341fc9d00078dfd7ef7ddae1791cb3329\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_fa90553564c468e2de09d35cf8c496f10b67ab8e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support.test\exposed-instrumentation-api-publish\0.5\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="905f3e63973d47fedf2d945fa31d8c0f0c98816e">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.test-exposed-instrumentation-api-publish-0.5_daf943d7e12fdb29a76b8bcd3f51c7250284ee5a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_c670a7e06bc147a7b1334c3659407c9acbf0594a\classes.dex" />
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_f92cfa97438bd8f039e709c4d95d7ddbe4c0036e\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.4.0_df4fe50ccef17f2eb6e52a3be3a9d0925da09e8d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_6a6e85fc620e7f3553b12cef78025e21550148c6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_48f4754c801903b8a8374a94c2ff38f1a1fce258\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_e1d41e1c14fc6e7b74183f54a16221fcd69d9fb2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_6fd27746eae7008b9be815c02207f5c489e9bb4c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="2973d150c0dc1fefe998f834810d68f278ea58ec">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\junit-4.12_f8ffae4e5e6fa67bf73deea1fa259bfca6576640\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="3b7173b3df4c7029699919414400041f64519e34">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.4.0_f36bf4903cb310d22fc0ebc7b0063d5225dcd3ba\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_3d4b61df9a47b746e205f51cf883614d5c1b5362\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.4.0_c1d673734eca7ec5c7a21abeda84e74322c624d9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_ba3ca40a419e191e850a53d8a52f3e5074f23ba3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="4e6470fe5081bd76bb727ea9d0d9de373ac5940b">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-gridlayout-v7-24.2.1_577359e950854a366418055fffbac83ad2505bb9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_326dd24991a73dc2e58e5bd4b259f8cb663d1b69\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_81c6b78b4db0301f24b7606e491c55912a8db1cf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-integration\1.3\5de0c73fef18917cd85d0ab70bb23818685e4dfd\hamcrest-integration-1.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="5de0c73fef18917cd85d0ab70bb23818685e4dfd">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\hamcrest-integration-1.3_9209fa504037678a12f81b0a8205e014fabf3657\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7593870e8724d81861e1340194ed94dfb879b567">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_960b36a7b16a0f558d909adad0d54baf728107bb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="34762013d39dbe6c656050589c44e8b61b9a2c5d">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.4.0_2896fb036ac6b008d0c718af37be00f799b15b52\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support.test.espresso\espresso-idling-resource\2.2.2\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="a890ee8445927649d9ed50f625a315d8758688be">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.test.espresso-espresso-idling-resource-2.2.2_8268c28b306274437364c3c75f434d0e31da0eb4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="4b630471536351be7c3c3100735c75b7ad2cbd84">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.4.0_45a213ffa65c9759515997005865b0b3a80dd097\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.4.0_afa4f1d7d209707b886fe17e7a9d8a8d6103e5c7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_ecd1f9541d8091ee6d7bd958a5662ed6639366c7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_bb104f0c599889f802855d85a620b34600ab0e22\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_24e6734c2829b32da04e33fbbff808955457d8b6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="3e37c37518baa4d49a0150f5657eb7cda1d395c4">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e30d6841100bfc4df0670661347fb850cdb4a849\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.4.0_0711be22dc27513b1ec0ec66817b5979a8a79580\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-library\1.3\4785a3c21320980282f9f33d0d1264a69040538f\hamcrest-library-1.3.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="4785a3c21320980282f9f33d0d1264a69040538f">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\hamcrest-library-1.3_b81b85f4a14868c240bb17a43fee61918528e105\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="88848548ab56d4fbf3d2d1b0c85bf1ff9b4c1f4b">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.4.0_0f98ce73cdd1fe8918797225c500df330bbd616c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.4.0\jars\classes.jar"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="a440fb3fec30ff925e9f601cc458fb6671834cb2">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.4.0_86f06825f7145da3422d4a78d26d6197daa3c975\classes.dex" />
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.4.0_404e9a7447d5f09bc31b9b437419fb8a5f8c8b56\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.4.0\jars\classes.jar"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3b7173b3df4c7029699919414400041f64519e34">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.4.0_b98cb6d410b5f55887d2a82eda02ee94f70004fc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="42a25dc3219429f0e5d060061f71acb49bf010a0">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\hamcrest-core-1.3_b7fde7ca0d44e2bb84633979ab3f19ded6401218\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d6e49797521c3ffacf04dc871b3e5816b326121e">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_73126a9e9cb7db30d95d1a22949bcf8c63c5038d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6bc41d9d6fd12d2ef23c785a259011001f4a1a5b">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.4.0_819974d2bab22ae9be74a9806633df2d38629e4e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2973d150c0dc1fefe998f834810d68f278ea58ec">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\junit-4.12_003a9431aa6405abc6f3a0d5178f7d4c95b42144\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.2\479c1e06db31c432330183f5cae684163f186146\javax.annotation-api-1.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="479c1e06db31c432330183f5cae684163f186146">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\javax.annotation-api-1.2_672bb501c64ecb6056fe0211376ee5e9b1cf0a6a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_310170b8d0e2739af35a4a761120e62c6a6f51f3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="84bf369090a8f7e293817efbd6ccf31ada1be32b">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.4.0_3d735bb7c135fb2f88ebff3b86743673b7d5f831\classes.dex" />
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.4.0_e19bbc5a25ef55d167592d990fa51cfc4ee4f3c9\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Julien\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support.test.espresso\espresso-core\2.2.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d115b0e9e1501135fe91254ba884fcbd83d374c0">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.test.espresso-espresso-core-2.2.2_bcc94e257072b5f732d8a779702e3e7267701255\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_a0651e341af2f156c2e78b53545f8c5a4c95aaeb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support.test\runner\0.5\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="796f9229948e907471c5595fbe94655ccf03ff73">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.test-runner-0.5_9583229192c31d696139e898d37ffa8d4e6578b8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\jsr305-2.0.1_b4c3ef193a6c54615d13d31ccde9216bd4fd6c5e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_c35dba9228eff27dd1027bef668500b2d8315412\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_74c916323f98ff177283eed8ffa339adbec7d1d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support.test\exposed-instrumentation-api-publish\0.5\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="905f3e63973d47fedf2d945fa31d8c0f0c98816e">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.test-exposed-instrumentation-api-publish-0.5_4d5c9e13cec0b1b742836937ffda0b509005c0d1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-integration\1.3\5de0c73fef18917cd85d0ab70bb23818685e4dfd\hamcrest-integration-1.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5de0c73fef18917cd85d0ab70bb23818685e4dfd">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\hamcrest-integration-1.3_0e06071718c4658050693f3f40064417f7eacca3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_8576c471a3665b18e70853a936d798b084e4ffc6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\javax.inject-1_04e0935430a3d002951a5822c00072f43009fe5d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-library\1.3\4785a3c21320980282f9f33d0d1264a69040538f\hamcrest-library-1.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4785a3c21320980282f9f33d0d1264a69040538f">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\hamcrest-library-1.3_4645775c38517362b4c223b7d278f696760798f4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_978109399dbc89409963312cd901b1878b6af8cf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_05613ee56881f73fa794746164d57425af147d74\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="18b5697c65c4fe5b7381613b8b8ae9ac52e26fa7">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.4.0_de41fa4e4dfd07d411b87b4a6ff9387d2d38213b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.4.0_7f27608cb78836886ea6479bafbb7aada2cd2f75\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support.test.espresso\espresso-idling-resource\2.2.2\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a890ee8445927649d9ed50f625a315d8758688be">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.test.espresso-espresso-idling-resource-2.2.2_737b046cca8f8cb8d07978b30b85037fb5156c93\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_1385319131cda104603a71779c709f3882bc0c47\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.3.1_7b8d10bc5183bb19586c0d69f7cf8cada15708d9\classes.dex" />
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.3.1_c46a35a32c28f22fe5885bad2211d72ea284afa0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="34762013d39dbe6c656050589c44e8b61b9a2c5d">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.4.0_c205d8a99933924387af67fcb34f91206e77cdaa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_dafd0db548cbe2ab55df5546a0c8718c5ea1bfc6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_3755acb7057486067a26d1df2e2122ebbee1e430\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\.gradle\caches\modules-2\files-2.1\com.squareup\javawriter\2.1.1\67ff45d9ae02e583d0f9b3432a5ebbe05c30c966\javawriter-2.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="67ff45d9ae02e583d0f9b3432a5ebbe05c30c966">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\javawriter-2.1.1_eada3851fd9737f0ea7134d4aac5fc75aff9efef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0e4d53465cc141bec58f18a894e4c4e80633fa32">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.4.0_fc62f4344417c2424679ea93d8d5dc0293860ecb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_3af48676b2cbf6db105f062fe9e0aaae44c52122\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_86d54f0831d4e27271aadceca9e5dee600acf364\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.4.0_8dbf3118069fdde0882972f1cbdd0f2a62804b1d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7ca227bb1b186497d907527809c2045e880e6986\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_bfc846c2e6efd30948183bf84b979535851cdd23\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="88848548ab56d4fbf3d2d1b0c85bf1ff9b4c1f4b">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.4.0_68ebb80b19fe6bc47233db9f21bd75c7d3ae5a34\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_13bd4ac28fa66582dd26b8db7cbafd676d7254c4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.4.0_ced795decf8d274fe800f7446d432f8bf2205ba8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="61e00257702e19c5173366130680718671d3c12f">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_13a6b65d65f18be03bed6a69311fcbee70f39891\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support.test\rules\0.5\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e11799d8a26bfa5d48acafe012ee5545b9bf468">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support.test-rules-0.5_ff69d86c53f6029fc97c695bfcfe141be94e0688\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4e6470fe5081bd76bb727ea9d0d9de373ac5940b">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-gridlayout-v7-24.2.1_f7a530dad23ba9820da4e35e774b8ff22508bce0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_9c13af5dd680151a78dc01bd5d87716d21674935\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4b630471536351be7c3c3100735c75b7ad2cbd84">
+        <dex dex="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.4.0_df0fd5d34ed65e60ba093a5ea24ef0ce34575e88\classes.dex" />
     </item>
 
 </items>

@@ -54,6 +54,8 @@ public class Checkout extends Activity {
                     newOrderIntent.putExtra("phoneNumber", getIntent().getStringExtra("phoneNumber"));
                     newOrderIntent.putExtra("zip", getIntent().getStringExtra("zip"));
                     newOrderIntent.putExtra("state", getIntent().getStringExtra("state"));
+                    newOrderIntent.putExtra("hashMap", getIntent().getSerializableExtra("hashMap"));
+                    newOrderIntent.putExtra("grandTotal", getIntent().getIntExtra("grandTotal", 1));
                     newOrderIntent.putExtra("listOfWines", getIntent().getStringArrayListExtra("listOfWines"));
 
                     startActivity(newOrderIntent);

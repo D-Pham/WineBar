@@ -20,6 +20,7 @@ public class Confirmation extends Activity {
     TextView customerZip;
     TextView customerState;
     TextView customerPaid;
+    TextView grandTotalPrice;
     Button placeOrder;
     Random r;
 
@@ -35,6 +36,7 @@ public class Confirmation extends Activity {
 
 
 
+        grandTotalPrice = (TextView) findViewById(R.id.orderSummaryTotalPriceTV);
         placeOrder = (Button) findViewById(R.id.place_order_button);
         customerPaid = (TextView) findViewById(R.id.cardLastDigits);
         customerPaid.setText("XXXX-XXXX-XXXX-" + getIntent().getStringExtra("fourDigits"));
@@ -69,6 +71,8 @@ public class Confirmation extends Activity {
         orderLA = new adapterCart(this, tempList);
         customerBought.setAdapter(orderLA);
 
+        grandTotalPrice.setText("Grand Total: $" +Integer.toString(getIntent().getIntExtra("grandTotal", 1)) +".00");
+
 
         placeOrder.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,6 +81,8 @@ public class Confirmation extends Activity {
                 Intent thankYouIntent = new Intent(Confirmation.this, ThankYou.class);
                 int orderNum = 10000 + r.nextInt(89999);
                 thankYouIntent.putExtra("orderNum", orderNum);
+                thankYouIntent.putExtra("hashMap", getIntent().getSerializableExtra("hashMap"));
+                thankYouIntent.putExtra("grandTotal", getIntent().getIntExtra("grandTotal", 1));
                 thankYouIntent.putStringArrayListExtra("listOfWines", getIntent().getStringArrayListExtra("listOfWines"));
                 startActivity(thankYouIntent);
             }
