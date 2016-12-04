@@ -5,60 +5,40 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="1119342410512002"
-    token="-7138333938228597043"
-    verifier="COMPATIBLE" >
+    timestamp="247162523861106"
+    token="-1205684918316748832"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="299" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="73" />
     <task
         name="verifier"
-        duration="0" />
+        duration="2" />
 
     <artifact
-        location="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-        type="RESOURCES" />
+        location="C:\Users\Potato\Desktop\umd-android-labs-master\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="1115901974318982"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="245506299800927"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
-            location="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\Potato\Desktop\umd-android-labs-master\WineBar\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="1119166747624979"
-        verifier="R_CLASS_CHANGE" >
+        timestamp="247162523861106"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
+            location="C:\Users\Potato\Desktop\umd-android-labs-master\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
             type="DEX" />
-        <artifact
-            location="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="1119295655387541"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\builds\debug\1119295655387541\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="1119342410512002"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\Jonas\Desktop\Final WineBar\WineBar-master\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

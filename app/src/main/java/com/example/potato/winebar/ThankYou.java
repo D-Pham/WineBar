@@ -74,17 +74,19 @@ public class ThankYou extends Activity {
         main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try {
-                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                    final DatabaseReference root = FirebaseDatabase.getInstance().getReference();
-
-                    GMailSender sender = new GMailSender("krazyangel22@gmail.com", "cmsc436!!");
-                    sender.sendMail("Your WineBar App Order",
-                            "Thank you for your purchase!!",
-                            "WineBarCMSC436@gmail.com", user.getEmail());
-                    Toast.makeText(getApplicationContext(),"Confirmation email sent!",Toast.LENGTH_SHORT);
-                } catch (Exception e) {
-                }
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                            GMailSender sender = new GMailSender("corgiappreciation@gmail.com", "corgiswag911");
+                            sender.sendMail("Your WineBar App Order",
+                                    "Thank you for your purchase!!",
+                                    "WineBarCMSC436@gmail.com", user.getEmail());
+                        } catch (Exception e) {
+                        }
+                    }
+                }).start();
 
                 Intent intent = new Intent(getApplicationContext(), Welcome.class);
                 startActivity(intent);
