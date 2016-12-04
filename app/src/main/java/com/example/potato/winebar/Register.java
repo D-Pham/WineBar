@@ -79,7 +79,7 @@ public class Register extends Activity {
                         AuthUserAccount authUserAccount = new AuthUserAccount(signUpFullName, signUpEmail, campaigns);
                         final String key = mDatabase.child("users").push().getKey();
                         mDatabase.child("users").child(key).setValue(authUserAccount);
-                        mDatabase.child("user_keys").child(signUpEmail.replace(".", "&")).setValue(key);
+                        mDatabase.child("user_keys").child(signUpEmail.toLowerCase().replace(".", "&")).setValue(key);
                         System.out.println("Worked");
                         welcome.putExtra("userkey", key);
                         startActivity(welcome);
