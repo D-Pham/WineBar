@@ -80,8 +80,11 @@ public class ThankYou extends Activity {
                         try {
                             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                             GMailSender sender = new GMailSender("corgiappreciation@gmail.com", "corgiswag911");
-                            sender.sendMail("Your WineBar App Order",
-                                    "Thank you for your purchase!!",
+                            sender.sendMail("Your WineBar App Order #" + getIntent().getIntExtra("orderNum", 1),
+                                    "Hello!\n"+"Thank you for your purchase of: $" +
+                                            Integer.toString(getIntent().getIntExtra("grandTotal", 1))
+                                            + ".00"+"\n"+"Your order number is: " + getIntent().getIntExtra("orderNum", 1) +
+                                    "\n"+"\n"+"-WineBar Team",
                                     "WineBarCMSC436@gmail.com", user.getEmail());
                         } catch (Exception e) {
                         }

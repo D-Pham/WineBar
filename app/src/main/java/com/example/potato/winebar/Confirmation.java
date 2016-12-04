@@ -8,8 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Random;
 
 public class Confirmation extends Activity {
@@ -54,13 +56,37 @@ public class Confirmation extends Activity {
         customerState.setText(getIntent().getStringExtra("state"));
 
 
-        cartObject c;
         for (String s: getIntent().getStringArrayListExtra("listOfWines")) {
+
+            cartObject c = null;
+            HashMap<String, Integer> hashMap = (HashMap<String, Integer>) getIntent().getSerializableExtra("hashMap");
             if(s.equals("Gewürztraminer")) {
-                c = new cartObject("gewurztraminer2", s, Integer.toString(3), Integer.toString(60));
-            }else{
-                c = new cartObject(s.toLowerCase()+"2", s, Integer.toString(3), Integer.toString(60));
+                c = new cartObject("gewurztraminer2", s, Integer.toString(hashMap.get(s)), Integer.toString(25 * hashMap.get(s)));
+            } else if (s.equals("Merlot")) {
+                c = new cartObject("merlot2", s, Integer.toString(hashMap.get(s)), Integer.toString(25 * hashMap.get(s)));
+
+            } else if (s.equals("Cava")) {
+                c = new cartObject("cava2", s, Integer.toString(hashMap.get(s)), Integer.toString(20 * hashMap.get(s)));
+
+            } else if (s.equals("Riesling")) {
+                c = new cartObject("riesling2", s, Integer.toString(hashMap.get(s)), Integer.toString(25 * hashMap.get(s)));
+
+            } else if (s.equals("Mourvedre")) {
+                c = new cartObject("mourvedre2", s, Integer.toString(hashMap.get(s)), Integer.toString(25 * hashMap.get(s)));
+
+            } else if (s.equals("Barbaresco")) {
+                c = new cartObject("barbaresco2", s, Integer.toString(hashMap.get(s)), Integer.toString(23 * hashMap.get(s)));
+
+            } else if (s.equals("Chardonnay")) {
+                c = new cartObject("chardonnay2", s, Integer.toString(hashMap.get(s)), Integer.toString(25 * hashMap.get(s)));
+
+            } else if (s.equals("Beaujolais")) {
+                c = new cartObject("beaujolais2", s, Integer.toString(hashMap.get(s)), Integer.toString(25 * hashMap.get(s)));
+
+            } else if (s.equals("Claret")) {
+                c = new cartObject("claret2", s, Integer.toString(hashMap.get(s)), Integer.toString(32 * hashMap.get(s)));
             }
+
             tempList.add(c);
         }
 
@@ -84,6 +110,9 @@ public class Confirmation extends Activity {
                 thankYouIntent.putExtra("hashMap", getIntent().getSerializableExtra("hashMap"));
                 thankYouIntent.putExtra("grandTotal", getIntent().getIntExtra("grandTotal", 1));
                 thankYouIntent.putStringArrayListExtra("listOfWines", getIntent().getStringArrayListExtra("listOfWines"));
+
+                Toast.makeText(getApplicationContext(),"A confirmation email has been sent!",Toast.LENGTH_SHORT).show();
+
                 startActivity(thankYouIntent);
             }
         });

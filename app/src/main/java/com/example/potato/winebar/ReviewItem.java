@@ -160,6 +160,7 @@ public class ReviewItem extends Activity {
                         @Override
                         public void onDataChange(DataSnapshot snapshot) {
                             // Retrieves FireBase data to get the unique key of the current user.
+                            System.out.println(email);
                             uKey = ((HashMap<String,String>)snapshot.getValue()).get(email).toString();
 
                             // Converts JSON to Gson to map out data to be committed to FireBase

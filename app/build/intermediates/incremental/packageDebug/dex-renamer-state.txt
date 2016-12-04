@@ -1,7 +1,7 @@
-#Sat Dec 03 20:05:55 EST 2016
-base.0=C\:\\Users\\Potato\\Desktop\\umd-android-labs-master\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_338d84f70f5e9ef91c92bd93702921e0725140da
+#Sat Dec 03 21:04:01 EST 2016
+base.0=C\:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_e30d6841100bfc4df0670661347fb850cdb4a849
 renamed.1=classes2.dex
 renamed.0=classes.dex
-file.1=C\:\\Users\\Potato\\Desktop\\umd-android-labs-master\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_e7b10018e5b69f2bfe733a494dde7d0e1cd6d2bd\\classes.dex
-base.1=C\:\\Users\\Potato\\Desktop\\umd-android-labs-master\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_e7b10018e5b69f2bfe733a494dde7d0e1cd6d2bd
-file.0=C\:\\Users\\Potato\\Desktop\\umd-android-labs-master\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_338d84f70f5e9ef91c92bd93702921e0725140da\\classes.dex
+file.1=C\:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_960b36a7b16a0f558d909adad0d54baf728107bb\\classes.dex
+base.1=C\:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_960b36a7b16a0f558d909adad0d54baf728107bb
+file.0=C\:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_e30d6841100bfc4df0670661347fb850cdb4a849\\classes.dex

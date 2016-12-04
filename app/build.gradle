@@ -32,9 +32,9 @@ dependencies {
     compile 'com.google.firebase:firebase-database:9.4.0'
     compile 'com.android.support.test.espresso:espresso-core:2.2.2'
     compile 'com.google.code.gson:gson:2.3.1'
-    compile files('C:/Users/Potato/Desktop/umd-android-labs-master/WineBar/lib/activation.jar')
-    compile files('C:/Users/Potato/Desktop/umd-android-labs-master/WineBar/lib/additionnal.jar')
-    compile files('C:/Users/Potato/Desktop/umd-android-labs-master/WineBar/lib/mail.jar')
+    compile files('C:/Users/Julien/Desktop/WineBar/lib/activation.jar')
+    compile files('C:/Users/Julien/Desktop/WineBar/lib/additionnal.jar')
+    compile files('C:/Users/Julien/Desktop/WineBar/lib/mail.jar')
 }
 
 apply plugin: 'com.google.gms.google-services'

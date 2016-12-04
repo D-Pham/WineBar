@@ -78,7 +78,7 @@
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="220dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
 
@@ -98,7 +98,7 @@
             android:text="Main Menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="18dp"
+            android:layout_marginBottom="35dp"
             android:layout_marginLeft="110dp"
             android:id="@+id/button5"
             android:layout_alignParentBottom="true"
