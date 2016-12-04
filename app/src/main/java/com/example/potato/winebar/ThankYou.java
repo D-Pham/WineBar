@@ -9,6 +9,12 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -68,6 +74,18 @@ public class ThankYou extends Activity {
         main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                try {
+                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                    final DatabaseReference root = FirebaseDatabase.getInstance().getReference();
+
+                    GMailSender sender = new GMailSender("krazyangel22@gmail.com", "cmsc436!!");
+                    sender.sendMail("Your WineBar App Order",
+                            "Thank you for your purchase!!",
+                            "WineBarCMSC436@gmail.com", user.getEmail());
+                    Toast.makeText(getApplicationContext(),"Confirmation email sent!",Toast.LENGTH_SHORT);
+                } catch (Exception e) {
+                }
+
                 Intent intent = new Intent(getApplicationContext(), Welcome.class);
                 startActivity(intent);
             }

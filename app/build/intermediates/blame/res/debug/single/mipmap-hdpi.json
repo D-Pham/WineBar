@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Potato\\Desktop\\umd-android-labs-master\\WineBar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Potato\\Desktop\\umd-android-labs-master\\WineBar\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\Jonas\\Desktop\\Final WineBar\\WineBar-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
         "source": "C:\\Users\\Jonas\\Desktop\\Final WineBar\\WineBar-master\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     }
