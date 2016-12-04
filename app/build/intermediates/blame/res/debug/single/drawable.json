@@ -120,10 +120,6 @@
         "source": "C:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.4.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart.png",
-        "source": "C:\\Users\\Julien\\Desktop\\WineBar\\app\\src\\main\\res\\drawable\\cart.png"
-    },
-    {
         "merged": "C:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\winebar.jpg",
         "source": "C:\\Users\\Julien\\Desktop\\WineBar\\app\\src\\main\\res\\drawable\\winebar.jpg"
     },
@@ -230,6 +226,10 @@
     {
         "merged": "C:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
         "source": "C:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cart2.png",
+        "source": "C:\\Users\\Julien\\Desktop\\WineBar\\app\\src\\main\\res\\drawable\\cart2.png"
     },
     {
         "merged": "C:\\Users\\Julien\\Desktop\\WineBar\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\riesling2.png",

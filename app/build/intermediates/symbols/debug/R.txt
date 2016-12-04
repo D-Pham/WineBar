@@ -674,7 +674,7 @@ int drawable abc_vector_test 0x7f020052
 int drawable barbaresco 0x7f020053
 int drawable barbaresco2 0x7f020054
 int drawable beaujolais2 0x7f020055
-int drawable cart 0x7f020056
+int drawable cart2 0x7f020056
 int drawable cava 0x7f020057
 int drawable cava2 0x7f020058
 int drawable chardonnay2 0x7f020059

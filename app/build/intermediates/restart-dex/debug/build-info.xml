@@ -5,37 +5,43 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="808471768098758"
+    timestamp="873864424074061"
     token="1957061096424637235"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="R_CLASS_CHANGE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1391" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="19" />
     <task
         name="verifier"
-        duration="0" />
+        duration="20" />
 
+    <artifact
+        location="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
     <artifact
         location="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
         type="DEX" />
 
     <build
-        timestamp="802930198375523"
+        timestamp="873656345756705"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Julien\Desktop\WineBar\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="808471768098758"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="873864424074061"
+        verifier="R_CLASS_CHANGE" >
+        <artifact
+            location="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
         <artifact
             location="C:\Users\Julien\Desktop\WineBar\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
             type="DEX" />

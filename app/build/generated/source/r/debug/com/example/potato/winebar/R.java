@@ -2799,7 +2799,7 @@ containing a value of this type.
         public static final int barbaresco=0x7f020053;
         public static final int barbaresco2=0x7f020054;
         public static final int beaujolais2=0x7f020055;
-        public static final int cart=0x7f020056;
+        public static final int cart2=0x7f020056;
         public static final int cava=0x7f020057;
         public static final int cava2=0x7f020058;
         public static final int chardonnay2=0x7f020059;
